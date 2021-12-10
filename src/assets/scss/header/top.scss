@@ -1,0 +1,55 @@
+@import "../mixins/media_queries";
+@import '../variables';
+// !!!!!! ВЕРХНИЙ БЛОК !!!!!!
+.top-info {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 7px calc(20% - 134.2px);
+  padding-bottom: 2px;
+
+  a {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: $primary;
+    text-decoration: none;
+  }
+
+  .link-back {
+    letter-spacing: -0.2px;
+  }
+
+  &_left-block {
+    display: flex;
+    align-items: center;
+
+    &__left-arrow {
+      width: 7.4px;
+      height: 12px;
+      margin-right: 15.3px;
+    }
+  }
+
+  &_right-block {
+    display: flex;
+    align-items: center;
+    .eye {
+      margin-right: 32px;
+    }
+    .cabinet {
+      display: flex;
+      align-items: center;
+      margin-right: -4.2px;
+      .person {
+        padding-right: 7px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}

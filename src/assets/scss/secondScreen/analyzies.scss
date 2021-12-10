@@ -1,0 +1,31 @@
+@import "../container";
+
+.first-screen {
+  display: flex;
+  justify-content: space-between;
+
+  &__left-banner {
+    min-width: calc(100% - 771px);
+    width: 372px;
+    height: auto;
+    max-height: 410px;
+    background: $itemlist;
+    margin-right: 17px;
+  }
+
+  &__right-slider {
+    max-width: 754px;
+    height: auto;
+
+    .desktop-banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .right-slider__bottom {
+      background: $itemlist;
+      height: 48px;
+      margin-top: -5px;
+    }
+  }
+}

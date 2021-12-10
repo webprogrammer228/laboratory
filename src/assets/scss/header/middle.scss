@@ -1,0 +1,226 @@
+@import "../variables";
+@import "../mixins/media_queries";
+// !!!!!! ЦЕНТРАЛЬНЫЙ БЛОК !!!!!!
+.center_info {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 23px calc(20% - 139.2px);
+
+  &__left-block {
+    display: flex;
+    margin-left: -3px;
+    align-items: center;
+
+    .lg-logo {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+
+    .sm-logo {
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: block;
+      }
+    }
+
+    //burger
+    .burger {
+      width: 30px;
+      margin-right: 10px;
+      display: none;
+
+      .burger-btn {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: none;
+        position: relative;
+        z-index: 60;
+
+        @include breakpoint(tablet) {
+          display: block;
+          margin-right: 29px;
+        }
+
+        @include breakpoint(mobile) {
+          margin-right: 12px;
+        }
+      }
+
+      .burger-btn::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        width: 23px;
+        background: #000;
+        height: 2px;
+        transition: 0.5s;
+      }
+      .burger-btn::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        bottom: 7px;
+        background: #000;
+        height: 2px;
+        transition: 0.5s;
+      }
+      .burger-btn span {
+        content: "";
+        position: absolute;
+        top: 13px;
+        width: 16px;
+        background: #000;
+        height: 2px;
+        transition: 0.5s;
+      }
+
+      // изменение стилей при нажатии
+      .burger-btn.active::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        width: 23px;
+        height: 2px;
+        transform: rotate(45deg) translate(5px, 4px);
+        transition: 0.5s;
+      }
+      .burger-btn.active::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        bottom: 7px;
+        height: 2px;
+        transform: rotate(-45deg) translate(7.6px, -6.5px);
+        transition: 0.5s;
+      }
+      .burger-btn.active span {
+        content: "";
+        position: absolute;
+        top: 13px;
+        width: 16px;
+        height: 2px;
+        transform: rotate(-45deg) translate(6.6px, 1.5px);
+        transition: 0.5s;
+      }
+      // конец блока изменения стилей при нажатии
+      @include breakpoint(tablet) {
+        display: block;
+      }
+      // endburger
+    }
+  }
+
+  &__right-block {
+    display: flex;
+
+    .phone {
+      margin-right: 38px;
+
+      @include breakpoint(tablet) {
+        margin-right: 16.2px;
+      }
+      @include breakpoint(mobile) {
+        display: none;
+      }
+
+      .phone__title {
+        color: $secondary;
+        font-family: "Gotham Pro light", sans-serif;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.6px;
+        font-weight: 200;
+        text-align: right;
+
+        @include breakpoint(tablet) {
+          font-size: 12.8px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .phone__number {
+        font-size: 24px;
+        line-height: 28px;
+        color: $primary;
+        text-decoration: none;
+        letter-spacing: 0.4px;
+
+        @include breakpoint(tablet) {
+          font-size: 17.8px;
+          line-height: 20px;
+          letter-spacing: 0.6px;
+        }
+
+        .added {
+          font-family: "Gotham Pro light", sans-serif;
+        }
+
+        .primary {
+          font-family: "Gotham Pro bold", sans-serif;
+          color: $primary-bold;
+        }
+      }
+    }
+
+    // кнопка "записаться на анализ"
+    .appointment {
+      width: 222px;
+      height: 48px;
+      background: $orange;
+      padding: 14px 32px;
+      border: 0;
+      color: $white;
+      cursor: pointer;
+      font-family: "Gotham Pro medium";
+      font-weight: 400;
+      font-size: 14px;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+    .appointment-mini {
+      width: 44px;
+      height: 44px;
+      background-image: url("../../images/tablet-button.svg");
+      border: none;
+      cursor: pointer;
+      display: none;
+      margin: 0px -3px;
+
+      @include breakpoint(tablet) {
+        display: block;
+      }
+      @include breakpoint(mobile) {
+        margin: 0 1px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    margin: calc(1.3px + 1.4%) calc(20px + 1.7%);
+  }
+  @include breakpoint(mobile) {
+    margin: 12px 20px;
+  }
+}
+
+.center_info__mobile {
+  display: flex;
+  margin: 13px 0px 0 0;
+  width: 90%;
+  justify-content: space-between;
+
+  .center_info__left-block {
+    .sm-logo {
+      margin-left: 60px;
+
+      @include breakpoint(mobile) {
+        margin-left: 40px;
+      }
+    }
+  }
+}
