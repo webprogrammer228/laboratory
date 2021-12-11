@@ -1,8 +1,10 @@
 @import "../container";
+@import "../mixins/media_queries";
 
 .first-screen {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 64px;
 
   &__left-banner {
     min-width: calc(100% - 771px);
@@ -13,19 +15,114 @@
     margin-right: 17px;
   }
 
+  .left-banner__content {
+    height: 100%;
+    padding: 30px 28px;
+
+    @include breakpoint(block-size) {
+      padding: calc(16px + (14 + 14 * 0.7) * ((100vw - 992px) / 1440))
+        calc(21px + (14 + 14 * 0.7) * ((100vw - 992px) / 1440));
+    }
+
+    .left-banner__title {
+      font-family: "Gotham Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: calc(14px + 13 * (100vw / 1840));
+      line-height: 36px;
+      color: #171d20;
+      letter-spacing: 1.7px;
+      padding-right: calc(44px + 73 * (100vw / 1840));
+
+      @include breakpoint(block-size) {
+        line-height: calc(27px + (12 + 12 * 0.7) * ((100vw - 992px) / 1440));
+        padding-right: calc(10px + 11 * (100vw / 1840));
+        font-size: calc(18px + (15 + 15 * 0.6) * ((100vw - 992px) / 1440));
+      }
+    }
+    .left-banner__subtitle {
+      font-family: "Gotham Pro", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      color: $dark;
+      margin: 16px 0;
+      letter-spacing: 0.6px;
+
+      @include breakpoint(block-size) {
+        line-height: calc(15px + (12 + 12 * 0.7) * ((100vw - 992px) / 1440));
+        font-size: calc(16px + (15 + 15 * 0.6) * ((100vw - 992px) / 1440));
+        margin: calc(11px + (13 + 13 * 0.4) * ((100vw - 992px) / 1440)) 0;
+      }
+    }
+
+    .diagnostic-list {
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      margin-left: 26px;
+      color: $primary;
+
+      @include breakpoint(block-size) {
+        line-height: calc(17px + (12 + 12 * 0.7) * ((100vw - 992px) / 1440));
+      }
+
+      .diagnostic-item {
+        margin-bottom: 7.6px;
+        letter-spacing: -0.6px;
+        margin-left: 1px;
+
+        .diagnostic-item-list {
+          text-decoration: none;
+          color: $primary;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 15px;
+          @include breakpoint(block-size) {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+
+    .diagnostic-show-all {
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: $primary;
+      margin-left: 28px;
+      letter-spacing: -0.6px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      @include breakpoint(block-size) {
+        margin-left: calc(1px + (10 * 0.6) * ((100vw - 992px) / 1440));
+      }
+    }
+  }
+
   &__right-slider {
     max-width: 754px;
     height: auto;
+    position: relative;
+    width: 100%;
 
     .desktop-banner {
       width: 100%;
       height: auto;
-    }
-
-    .right-slider__bottom {
-      background: $itemlist;
-      height: 48px;
-      margin-top: -5px;
     }
   }
 }

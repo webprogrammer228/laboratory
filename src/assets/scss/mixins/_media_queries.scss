@@ -9,4 +9,10 @@
       @content;
     }
   }
+
+  @if $point == block-size {
+    @media screen and (max-width: 1428px) {
+      @content;
+    }
+  }
 }
