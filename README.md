@@ -1,2 +1,0 @@
-# euro-lab
-Laboratory Euromed
