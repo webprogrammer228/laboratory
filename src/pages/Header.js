@@ -7,10 +7,12 @@ function Header() {
   return (
     <>
       <header className="lab-header">
-        <Topinfo />
-        <hr className="border_block" />
-        <CentralInfo />
-        <Bottominfo />
+        <div className="block">
+          <Topinfo />
+          <hr className="border_block" />
+          <CentralInfo />
+          <Bottominfo />
+        </div>
       </header>
     </>
   );

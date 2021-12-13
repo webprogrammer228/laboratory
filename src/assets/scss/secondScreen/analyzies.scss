@@ -3,8 +3,13 @@
 
 .first-screen {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 64px;
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
 
   &__left-banner {
     min-width: calc(100% - 771px);
@@ -13,6 +18,12 @@
     max-height: 410px;
     background: $itemlist;
     margin-right: 17px;
+
+    @include breakpoint(tablet) {
+      order: 2;
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
   .left-banner__content {
@@ -22,6 +33,15 @@
     @include breakpoint(block-size) {
       padding: calc(16px + (14 + 14 * 0.7) * ((100vw - 992px) / 1440))
         calc(21px + (14 + 14 * 0.7) * ((100vw - 992px) / 1440));
+    }
+
+    @include breakpoint(tablet) {
+      padding: calc(37px + (2 + 2 * 0.7) * ((100vw - 992px) / 1440))
+        calc(33px + (2 + 2 * 0.7) * ((100vw - 992px) / 1440));
+    }
+
+    @include breakpoint(mobile) {
+      padding: 24px;
     }
 
     .left-banner__title {
@@ -39,6 +59,12 @@
         padding-right: calc(10px + 11 * (100vw / 1840));
         font-size: calc(18px + (15 + 15 * 0.6) * ((100vw - 992px) / 1440));
       }
+      @include breakpoint(tablet) {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        margin-bottom: 17px;
+      }
     }
     .left-banner__subtitle {
       font-family: "Gotham Pro", sans-serif;
@@ -55,6 +81,13 @@
         font-size: calc(16px + (15 + 15 * 0.6) * ((100vw - 992px) / 1440));
         margin: calc(11px + (13 + 13 * 0.4) * ((100vw - 992px) / 1440)) 0;
       }
+
+      @include breakpoint(tablet) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 2px;
+        margin-bottom: 12px;
+      }
     }
 
     .diagnostic-list {
@@ -68,12 +101,32 @@
 
       @include breakpoint(block-size) {
         line-height: calc(17px + (12 + 12 * 0.7) * ((100vw - 992px) / 1440));
+        margin-left: calc(17px + (12 + 12 * 0.7) * ((100vw - 992px) / 1440));
+      }
+
+      @include breakpoint(tablet) {
+        line-height: 20px;
+        margin-left: 2px;
+        height: 80px;
+        column-count: 2;
+        margin-bottom: 7px;
+      }
+
+      @include breakpoint(beforemobile) {
+        column-count: 1;
+        height: 100%;
       }
 
       .diagnostic-item {
         margin-bottom: 7.6px;
         letter-spacing: -0.6px;
         margin-left: 1px;
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          line-height: 20px;
+          margin-left: 24px;
+        }
 
         .diagnostic-item-list {
           text-decoration: none;
@@ -111,6 +164,12 @@
       @include breakpoint(block-size) {
         margin-left: calc(1px + (10 * 0.6) * ((100vw - 992px) / 1440));
       }
+
+      @include breakpoint(tablet) {
+        margin-left: 27px;
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -118,11 +177,36 @@
     max-width: 754px;
     height: auto;
     position: relative;
-    width: 100%;
+    width: calc(100% - 389px);
+
+    @include breakpoint(tablet) {
+      width: 100%;
+      max-width: none;
+    }
 
     .desktop-banner {
       width: 100%;
       height: auto;
+
+      @include breakpoint(tablet) {
+        height: 280px;
+        object-fit: fill;
+      }
+
+      @include breakpoint(mobile) {
+        display: none;
+      }
+    }
+
+    .mobile-banner {
+      display: none;
+
+      @include breakpoint(mobile) {
+        display: block;
+        width: 97%;
+        object-fit: fill;
+        height: 358px;
+      }
     }
   }
 }

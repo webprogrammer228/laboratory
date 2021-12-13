@@ -29,7 +29,7 @@
     //burger
     .burger {
       width: 30px;
-      margin-right: 10px;
+      margin-right: 18px;
       display: none;
 
       .burger-btn {
@@ -47,6 +47,12 @@
 
         @include breakpoint(mobile) {
           margin-right: 12px;
+        }
+      }
+
+      .burger-btn.active {
+        @include breakpoint(mobile) {
+          margin-right: -30px;
         }
       }
 
@@ -121,7 +127,7 @@
       margin-right: 38px;
 
       @include breakpoint(tablet) {
-        margin-right: 16.2px;
+        margin-right: 12.1px;
       }
       @include breakpoint(mobile) {
         display: none;
@@ -201,25 +207,28 @@
   }
 
   @include breakpoint(tablet) {
-    margin: calc(1.3px + 1.4%) calc(20px + 1.7%);
+    margin: calc(6.3px + 1.4%) calc(20px + 3%);
   }
   @include breakpoint(mobile) {
-    margin: 12px 20px;
+    margin: 30px 20px;
   }
 }
 
 .center_info__mobile {
   display: flex;
-  margin: 13px 0px 0 0;
+  margin-top: 16px;
   width: 90%;
   justify-content: space-between;
 
   .center_info__left-block {
+    @include breakpoint(tablet) {
+      margin-left: -23px;
+    }
     .sm-logo {
-      margin-left: 60px;
+      margin-left: 70px;
 
       @include breakpoint(mobile) {
-        margin-left: 40px;
+        margin-left: 55px;
       }
     }
   }

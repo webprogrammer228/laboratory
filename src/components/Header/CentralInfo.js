@@ -2,15 +2,22 @@ import "../../assets/scss/header/middle.scss";
 import lg_logo from "../../assets/images/logo.svg";
 import sm_logo from "../../assets/images/sm_logo.svg";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function CentralInfo() {
   const [menuActive, setMenuActive] = useState(false);
   const [burgerActive, setBurgerActive] = useState(false);
   const [patientActive, setPatientActive] = useState(false);
+
+  // залочивание экрана при скролле в мобилках и десктопах
+  useEffect(() => {
+    document.body.classList.toggle("lock", menuActive);
+  }, [menuActive]);
+
   return (
     <div className="center_info">
       <div className="center_info__left-block">
+        {/*  смена состояния кнопки бургера */}
         <div className="burger" onClick={() => setBurgerActive(!burgerActive)}>
           <div
             className={menuActive ? "burger-btn active" : "burger-btn"}

@@ -9,9 +9,14 @@
       @content;
     }
   }
-
   @if $point == block-size {
     @media screen and (max-width: 1428px) {
+      @content;
+    }
+  }
+
+  @if $point == beforemobile {
+    @media screen and (max-width: 700px) {
       @content;
     }
   }

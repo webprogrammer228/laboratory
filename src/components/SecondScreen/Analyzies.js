@@ -1,5 +1,6 @@
 import "../../assets/scss/secondScreen/analyzies.scss";
 import CarouselElem from "./Carousel";
+import Benefits from "./Benefits";
 
 const Analyzies = () => {
   return (
@@ -49,6 +50,7 @@ const Analyzies = () => {
       <div className="first-screen__right-slider">
         <CarouselElem />
       </div>
+      <Benefits />
     </div>
   );
 };

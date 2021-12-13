@@ -1,6 +1,10 @@
-@import './header.scss';
+@import "./header.scss";
 @import "./variables";
 
 body {
   background: $hoveritemlist;
+}
+
+body.lock {
+  overflow: hidden;
 }

@@ -16,8 +16,15 @@ header {
   display: flex;
   flex-direction: column;
 
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: -40px;
+
   @include breakpoint(tablet) {
-    height: 132px;
+    height: 148px;
   }
 
   // разделяющая линия между авторизацией и блоком с логотипом
@@ -32,5 +39,9 @@ header {
     .border_block {
       display: none;
     }
+  }
+  .block {
+    background: white;
+    padding-bottom: 15px;
   }
 }

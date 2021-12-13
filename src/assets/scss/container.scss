@@ -1,5 +1,17 @@
 @import "./variables";
+@import "./mixins/media_queries";
 
 .container {
   margin: 41px calc(20% - 139.2px) 0;
+  padding-top: 208px;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    padding-top: 131px;
+    margin: 34px calc(14px + 3.3%);
+  }
+
+  @include breakpoint(mobile) {
+    margin: 23px 10px 0 16px;
+  }
 }
