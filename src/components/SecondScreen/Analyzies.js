@@ -9,6 +9,7 @@ const Analyzies = () => {
         <div className="left-banner__content">
           <p className="left-banner__title">Сдать анализы в Омске</p>
           <p className="left-banner__subtitle">Диагностика:</p>
+                  {/* <div className="lists">  */}
           <ul className="diagnostic-list">
             <li className="diagnostic-item">
               <a href="/" className="diagnostic-item-list">
@@ -40,12 +41,44 @@ const Analyzies = () => {
                 Беременность
               </a>
             </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Сосудистые заболевания
+              </a>
+            </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Диабет
+              </a>
+            </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Беременность
+              </a>
+            </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Сосудистые заболевания
+              </a>
+            </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Диабет
+              </a>
+            </li>
+            <li className="diagnostic-item">
+              <a href="/" className="diagnostic-item-list">
+                Беременность
+              </a>
+            </li>
           </ul>
+
+
 
           <a href="/" className="diagnostic-show-all">
             Посмотреть все виды исследований
           </a>
-        </div>
+      </div>
       </div>
       <div className="first-screen__right-slider">
         <CarouselElem />

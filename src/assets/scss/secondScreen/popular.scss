@@ -1,0 +1,147 @@
+@import "../variables";
+@import "../mixins/media_queries";
+
+.popular {
+  font-family: "Gotham Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 20px;
+
+  .popular-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 36px;
+      font-weight: bold;
+
+      @include breakpoint(tablet) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    &__all-services {
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: $primary;
+
+      &:hover {
+          opacity: .5;
+      }
+
+      @include breakpoint(mobile) {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+  .popular-services {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+
+    &-item {
+      width: 100%;
+      height: 216px;
+      background: white;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        top: 24px;
+        left: 24px;
+        background: $primary-bold;
+        border-radius: 50%;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 26px;
+        color: $primary-bold;
+        font-weight: bold;
+        position: absolute;
+        top: 140px;
+        padding: 0 24px;
+      }
+
+      &:hover {
+        background: $primary-bold;
+      }
+      &:hover > div {
+        display: block;
+      }
+
+      & > div {
+        width: 100%;
+        height: 216px;
+        position: relative;
+        display: none;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 27px;
+          left: 24px;
+          background: $primary;
+          border-radius: 50%;
+        }
+
+        p.dotted-price {
+          position: absolute;
+          top: 24px;
+          right: 24px;
+          color: $white;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        p.price {
+          position: absolute;
+          top: 44px;
+          right: 24px;
+          color: $white;
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: normal;
+        }
+
+        .popular-services-item-hovered-title {
+          font-size: 18px;
+          line-height: 26px;
+          color: $white;
+          font-weight: bold;
+          position: absolute;
+          top: 100px;
+          padding: 0 24px;
+
+          & ~ p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            font-weight: normal;
+            position: absolute;
+            top: 125px;
+            padding: 0 24px;
+          }
+        }
+      }
+    }
+
+    @include breakpoint(tablet) {
+        display: none;
+    }
+  }
+

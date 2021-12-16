@@ -2,7 +2,7 @@
 @import "../variables";
 // !!!!!! НИЖНИЙ БЛОК !!!!!!
 .bottom_info {
-  height: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   margin: 11px calc(20% - 139.2px) 0;
@@ -13,6 +13,7 @@
     margin-left: -3px;
     margin-right: calc(60% - 485px);
 
+
     @include breakpoint(tablet) {
       height: 44px;
       width: 100%;
@@ -21,6 +22,10 @@
     @include breakpoint(mobile) {
       padding-left: 0;
     }
+    @include breakpoint(big) {
+      margin-right: 0;
+    }
+
     .index_search {
       width: 274px;
       height: 48px;
@@ -117,12 +122,19 @@
             }
           }
         }
+
+        @include breakpoint(big) {
+          margin-right: 56px;
+        }
       }
       .navlist-item:hover {
         border-bottom: 4px solid $orange;
       }
       .navlist-item:nth-child(4) {
         margin-right: calc(30% - 120px);
+        @include breakpoint(big) {
+          margin-right: 56px;
+        }
       }
       .navlist-item:nth-child(4):hover > .item-list {
         display: block;
@@ -160,6 +172,10 @@
 
     @include breakpoint(tablet) {
       display: none;
+    }
+
+    @include breakpoint(big) {
+      width: auto;
     }
   }
 

@@ -20,4 +20,10 @@
       @content;
     }
   }
+
+  @if $point == big {
+    @media screen and (min-width: 1441px) {
+      @content;
+    }
+  }
 }
