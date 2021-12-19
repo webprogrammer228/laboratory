@@ -1,11 +1,7 @@
-import '../../assets/scss/thirdScreen/main.scss';
+import "../../assets/scss/thirdScreen/main.scss";
 
 const MainBlock = () => {
-    return (
-        <div class="third-screen">
-            
-        </div>
-    )
-}
+  return <div className="third-screen"></div>;
+};
 
 export default MainBlock;
