@@ -15,6 +15,12 @@
     }
   }
 
+  @if $point == search {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+
   @if $point == beforemobile {
     @media screen and (max-width: 700px) {
       @content;

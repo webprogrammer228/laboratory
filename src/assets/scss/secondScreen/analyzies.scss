@@ -211,14 +211,15 @@
             margin-bottom: 8px;
           }
         }
-        @media screen and (max-width: 1800px) {
-          &:nth-child(5) ~ li {
+        @media screen and (max-width: 2000px) {
+          &:nth-child(7) ~ li {
             display: none;
           }
         }
-        @media screen and (max-width: 1600px) {
-          &:nth-child(6),
-          &:nth-child(7) {
+
+
+        @media screen and (max-width: 1680px) {
+          &:nth-child(5) ~ li {
             display: none;
           }
         }
@@ -254,7 +255,7 @@
         display: none;
       }
 
-      @media screen and (max-width: 1800px) {
+      @media screen and (max-width: 2000px) {
         display: block;
       }
     }

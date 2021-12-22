@@ -1,11 +1,7 @@
 import MainBlock from "../components/ThirdScreen/MainBlock";
 
 const ThirdScreen = () => {
-  return (
-
-      <MainBlock />
-
-  );
+  return <MainBlock />;
 };
 
 export default ThirdScreen;

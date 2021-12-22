@@ -9,52 +9,68 @@ const CarouselElem = () => {
       <div className="carousel">
         <Carousel>
           <Carousel.Item>
-            <img
-              className="desktop-banner"
-              src={banner_desktop}
-              alt="banner_desktop"
-            />
-            <img
-              className="mobile-banner"
-              src={banner_mobile}
-              alt="banner_mobile"
-            />
+            <a href="/">
+              <img
+                className="desktop-banner"
+                src={banner_desktop}
+                alt="banner_desktop"
+              />
+            </a>
+            <a href="/">
+              <img
+                className="mobile-banner"
+                src={banner_mobile}
+                alt="banner_mobile"
+              />
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="desktop-banner"
-              src={banner_desktop}
-              alt="banner_desktop"
-            />
+            <a href="/">
+              <img
+                className="desktop-banner"
+                src={banner_desktop}
+                alt="banner_desktop"
+              />
+            </a>
+            <a href="/">
             <img
               className="mobile-banner"
               src={banner_mobile}
               alt="banner_mobile"
             />
+            </a>
           </Carousel.Item>
           <Carousel.Item>
+            <a href="/">
             <img
               className="desktop-banner"
               src={banner_desktop}
               alt="banner_desktop"
             />
+            </a>
+            <a href="/">
             <img
               className="mobile-banner"
               src={banner_mobile}
               alt="banner_mobile"
             />
+            </a>
           </Carousel.Item>
           <Carousel.Item>
+            <a href="/">
             <img
               className="desktop-banner"
               src={banner_desktop}
               alt="banner_desktop"
             />
+            </a>
+            <a href="/">
             <img
               className="mobile-banner"
               src={banner_mobile}
               alt="banner_mobile"
             />
+            </a>
           </Carousel.Item>
         </Carousel>
       </div>

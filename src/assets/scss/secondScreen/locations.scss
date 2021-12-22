@@ -52,17 +52,18 @@
     .location-list-mobile {
       list-style-type: none;
 
+      a {
+        text-decoration: none;
+      }
+
       .location-list-item {
         padding: 5px 32px;
-        // margin-bottom: 16px;
-        text-decoration: underline dotted;
         color: $primary-bold;
         cursor: pointer;
         font-family: "Myriad Pro", sans-serif;
 
-        a {
-          text-decoration: none;
-          color: $primary;
+        &-title {
+          text-decoration: underline dotted;
         }
 
         &:hover {

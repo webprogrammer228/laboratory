@@ -1,13 +1,12 @@
 import "../../assets/scss/secondScreen/locations.scss";
 import "simplebar/dist/simplebar.min.css";
 import SimpleBar from "simplebar-react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-// количество элементов
+// количество элементов для перебора
 const numList = 5;
-const mapList = 5;
 
-// объект с данными
+// объект с данными для перебора
 const object = {
   title: {
     title: "ул. Старозагородная роща, 8",
@@ -51,6 +50,8 @@ const object = {
   ],
 };
 
+
+// Список для отображения на пк
 const ItemListDesktop = ({ id, onClick, isSelected, adress, time, title }) => {
   return (
     <li
@@ -59,7 +60,7 @@ const ItemListDesktop = ({ id, onClick, isSelected, adress, time, title }) => {
       className={`location-list-item${isSelected ? " active" : ""}`}
       onClick={onClick}
     >
-      {title}
+      <span className="location-list-item-title">{title}</span>
       <div className="location-list-address">
         <p className="address-title">{adress}</p>
         <p className="adress-timetable">{time}</p>
@@ -68,6 +69,7 @@ const ItemListDesktop = ({ id, onClick, isSelected, adress, time, title }) => {
   );
 };
 
+// Список для отображения на таблетках и мобильных
 const ItemListMobile = ({
   id,
   onClick,
@@ -85,7 +87,7 @@ const ItemListMobile = ({
         className={`location-list-item${isSelected ? " active" : ""}`}
         onClick={onClick}
       >
-        {title}
+        <span className="location-list-item-title">{title}</span>
         <div className="location-list-address">
           <p className="address-title">{adress}</p>
           <p className="adress-timetable">{time}</p>
@@ -95,6 +97,7 @@ const ItemListMobile = ({
   );
 };
 
+// Элемент карты 
 const Map = ({ src, id, isSelected }) => {
   return (
     <iframe
@@ -136,6 +139,7 @@ function Location() {
         <p className="map-title">Сдать анализы в Евромед</p>
         <p className="map-subtitle">Места приема анализов:</p>
         <ul className="location-list">
+          {/* Помещаю список в элемент для стилизации прокрутки */}
           <SimpleBar style={{ maxHeight: 300 }}>
             {ids.map((id) => (
               <ItemListDesktop
@@ -149,9 +153,11 @@ function Location() {
               />
             ))}
           </SimpleBar>
+          {/*  */}
         </ul>
 
         <ul className="location-list-mobile">
+          {/* Так же и для мобильных, помещаю в элемент стилизации прокрутки */}
           <SimpleBar>
             {ids.map((id) => (
               <ItemListMobile
@@ -166,6 +172,7 @@ function Location() {
               />
             ))}
           </SimpleBar>
+          {/*  */}
         </ul>
       </div>
       <div className="map">
@@ -180,7 +187,7 @@ function Location() {
                 className="active"
               />
             );
-          } else return;
+          } else return "";
         })}
       </div>
     </div>
