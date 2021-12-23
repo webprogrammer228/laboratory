@@ -1,0 +1,190 @@
+@import "../variables";
+@import "../mixins/media_queries";
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+  background: url("../../images/consultation.png"), rgba(236, 247, 249, 0.64);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    background: transparent;
+  }
+
+  .text-block {
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    white-space: pre-line;
+
+    &__title {
+      font-size: 26px;
+      line-height: 36px;
+      color: $dark;
+      margin-bottom: 24px;
+
+      @include breakpoint(tablet) {
+        position: absolute;
+        top: 16px;
+        left: 39px;
+        white-space: initial;
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      @include breakpoint(mobile) {
+        left: 27px;
+        white-space: pre-line;
+      }
+    }
+
+    &__subtitle {
+      font-family: "Myriad Pro", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $submenutext;
+      margin-bottom: 278px;
+
+      @media screen and (max-width: 1340px) {
+        visibility: hidden;
+      }
+
+      @include breakpoint(tablet) {
+        visibility: visible;
+        position: absolute;
+        top: 49px;
+        left: 38px;
+        white-space: initial;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 32px 0 0;
+      }
+
+      @include breakpoint(mobile) {
+        left: 27px;
+        top: 73px;
+      }
+    }
+
+    .rounds-consultation {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  .consultation-desktop {
+    width: 400px;
+    height: 502px;
+    background: transparent;
+    border: 4px solid $orange;
+    margin-bottom: 112px;
+    padding: 40px;
+
+    @include breakpoint(tablet) {
+      width: 100%;
+      height: 418px;
+      padding: 32px;
+    }
+
+    @include breakpoint(mobile) {
+      height: 540px;
+      padding: 24px;
+    }
+
+    .form-title {
+      font-family: "Gotham Pro medium", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: $dark;
+      margin-bottom: 24px;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+
+    .contacts {
+      width: 100%;
+      margin: 0;
+
+      @include breakpoint(tablet) {
+        margin-top: 72px;
+        display: flex;
+      }
+
+      @include breakpoint(mobile) {
+        flex-direction: column;
+        margin-top: 112px;
+      }
+    }
+
+    input,
+    textarea {
+      padding: 14px 16px;
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      background: $white;
+      border: 0;
+      margin-bottom: 16px;
+      width: 100%;
+      resize: none;
+      color: $submenutext;
+
+      @include breakpoint(tablet) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    input:first-child {
+      @include breakpoint(tablet) {
+        margin-right: 16px;
+      }
+    }
+
+    textarea {
+      margin-bottom: 24px;
+    }
+  }
+
+  .consultation-send {
+    width: 100%;
+    padding: 14px 0;
+    background: $orange;
+    border: 0;
+    cursor: pointer;
+
+    font-family: "Gotham Pro", sans-serif;
+    color: $white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-bottom: 24px;
+  }
+
+  .agreement {
+    font-family: "Myriad Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $submenutext;
+
+    &-link {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}

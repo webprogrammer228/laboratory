@@ -39,8 +39,8 @@ const Analyzies = () => {
     <div className="first-screen">
       <div className="first-screen__left-banner">
         <div className="left-banner__content">
-          <p className="left-banner__title">Сдать анализы в Омске</p>
-          <p className="left-banner__subtitle">Диагностика:</p>
+          <h1 className="left-banner__title">Сдать анализы в Омске</h1>
+          <h2 className="left-banner__subtitle">Диагностика:</h2>
           <ul className="diagnostic-list">
           {counter.map((id) => (
               <AnalyziesList

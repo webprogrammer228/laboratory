@@ -1,0 +1,221 @@
+@import "../variables";
+@import "../mixins/media_queries";
+
+.articles {
+  display: flex;
+  margin-bottom: 32px;
+
+  &-title {
+    font-family: "Gotham Pro bold", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 36px;
+    color: $dark;
+  }
+}
+
+.swiper {
+  margin-bottom: 72px;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 34px;
+  }
+}
+
+
+.swiper-slide {
+  width: 272.86px;
+  height: 500px;
+
+  @include breakpoint(tablet) {
+    height: auto;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 470px;
+  width: 48px;
+  height: 48px;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  float: right;
+  margin-right: 70px;
+  position: relative;
+  &::after {
+    content: url("../../images/left-arrow-slider.svg");
+    width: 48px;
+    height: 48px;
+  }
+  &:hover::after {
+    opacity: 0.65;
+  }
+}
+
+.swiper-button-next {
+  position: absolute;
+  &::after {
+    content: url("../../images/right-arrow-slider.svg");
+    width: 48px;
+    height: 48px;
+  }
+
+  &:hover::after {
+    opacity: 0.65;
+  }
+}
+
+.swiper-pagination {
+  width: auto !important;
+  float: right !important;
+  position: relative !important;
+  margin-right: 20px !important;
+  top: 467px !important;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+
+  span {
+    box-sizing: content-box;
+    background: black;
+    flex: 0 1 auto;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #171d20;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 50%;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  .swiper-pagination-bullet-active {
+    outline: 2px solid #00a7b5;
+  }
+}
+
+.carousel-article {
+  background: transparent;
+  text-decoration: none;
+  @include breakpoint(tablet) {
+    height: 360px;
+    background: $white;
+  }
+
+  &:hover > div > div > p:nth-child(2) {
+    color: $orange;
+  }
+  .article-block {
+    width: 272px;
+    font-family: "Myriad Pro", sans-serif;
+    font-style: normal;
+    margin-right: 18px;
+
+    @include breakpoint(tablet) {
+      background: white;
+      height: 360px;
+    }
+
+    img:last-child {
+      margin-right: 0;
+    }
+
+    .text-block {
+      width: 100%;
+      height: 100%;
+      padding: 0 10px;
+
+      @include breakpoint(tablet) {
+        height: auto;
+      }
+    }
+
+    .article-date {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: $secondary;
+      margin-bottom: 8px;
+      margin-top: 16px;
+    }
+
+    .article-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark;
+    }
+
+    .article-subtitle {
+      font-size: 16px;
+      line-height: 24px;
+      color: $submenutext;
+      margin-top: 8px;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-indicators {
+    display: none;
+  }
+
+  .desktop-banner {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.show-all-articles__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $dark;
+  text-decoration: none;
+
+  position: relative;
+  top: -140px;
+  z-index: 20;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+
+  .show-all-articles {
+    font-family: "Gotham Pro bold", sans-serif;
+    padding: 14px 32px;
+    background: transparent;
+    border: 1px solid $orange;
+    cursor: pointer;
+
+    &:hover {
+      background: $orange;
+      color: $white;
+      transition: 0.7s;
+
+      @include breakpoint(tablet) {
+        background: transparent;
+        color: transparent;
+      }
+    }
+  }
+}

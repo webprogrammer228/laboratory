@@ -11,6 +11,7 @@
 
   .popular-header {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
     margin-bottom: 32px;
 
@@ -25,7 +26,7 @@
       }
     }
 
-    &__all-services {
+    &__category-link {
       font-family: "Myriad Pro", sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -82,7 +83,7 @@
       left: 24px;
       width: 56px;
       height: 56px;
-      background: $primary-bold;
+      background: $primary;
       border-radius: 50%;
       z-index: 100;
     }

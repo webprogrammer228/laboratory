@@ -78,19 +78,18 @@ const data = {
 const PopularElem = ({ id, title, dottedPrice, price, hoverSubtitle }) => {
   return (
     <a href="/" className="popular-services-item" key={id}>
-          <div className="block-wrapper">
-        </div>
-        <p className="popular-services-item-text">{title}</p>
-        <div className="popular-services-item-hovered">
-          <p className="dotted-price">
-            <s>{dottedPrice} &#8381;</s>
-          </p>
-          <p className="price">{price} &#8381;</p>
-          <p className="popular-services-item-hovered-title">{title}</p>
-          <p className="popular-services-item-hovered-subtitle">
-            {hoverSubtitle}
-          </p>
-        </div>
+      <div className="block-wrapper"></div>
+      <h3 className="popular-services-item-text">{title}</h3>
+      <div className="popular-services-item-hovered">
+        <p className="dotted-price">
+          <s>{dottedPrice} &#8381;</s>
+        </p>
+        <p className="price">{price} &#8381;</p>
+        <h3 className="popular-services-item-hovered-title">{title}</h3>
+        <p className="popular-services-item-hovered-subtitle">
+          {hoverSubtitle}
+        </p>
+      </div>
     </a>
   );
 };
@@ -126,10 +125,12 @@ const Popular = () => {
     <>
       <div className="popular">
         <div className="popular-header">
-          <p className="popular-header__title">Популярное</p>
-          <a className="popular-header__all-services" href="/">
-            Все услуги лаборатории
-          </a>
+          <h1 className="popular-header__title">Услуги лаборатории</h1>
+          <div className="categories">
+            <a className="popular-header__category-link" href="/">
+              Все услуги
+            </a>
+          </div>
         </div>
 
         <div className="popular-services">
@@ -145,7 +146,7 @@ const Popular = () => {
           ))}
         </div>
       </div>
-      <PopularMobile/>
+      <PopularMobile />
     </>
   );
 };
