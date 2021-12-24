@@ -4,10 +4,11 @@ import ThirdImg from "../../assets/images/article-carousel-item3.jpg";
 import "../../assets/scss/fourthScreen/articles.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-
 import React from "react";
-import "swiper/css";
-import "swiper/css/pagination";
+
+// если будет ошибка в зависимостях, то надо заменить две строки на такие:
+//   [вот эту часть как здесь] => "./swiper.min.css":  [а здесь текущая зависимость] => "./swiper.min.css",
+//  [вот эту часть как здесь] =>  "./swiper-bundle.min.css": [а здесь текущая зависимость] => "./swiper-bundle.min.css",
 
 const data = {
   imgs: {

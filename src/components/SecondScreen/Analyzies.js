@@ -23,14 +23,13 @@ const data = {
 const counter = [...Array(count).keys()].map((n) => n.toString());
 let items = Object.values(data.items);
 
-
 const AnalyziesList = ({ id, title }) => {
   return (
     <li className="diagnostic-item" key={id}>
-    <a href="/" className="diagnostic-item-list">
-      {title}
-    </a>
-  </li>
+      <a href="/" className="diagnostic-item-list">
+        {title}
+      </a>
+    </li>
   );
 };
 
@@ -42,11 +41,8 @@ const Analyzies = () => {
           <h1 className="left-banner__title">Сдать анализы в Омске</h1>
           <h2 className="left-banner__subtitle">Диагностика:</h2>
           <ul className="diagnostic-list">
-          {counter.map((id) => (
-              <AnalyziesList
-                key={id}
-                title={items[id]}
-              />
+            {counter.map((id) => (
+              <AnalyziesList key={id} title={items[id]} />
             ))}
           </ul>
           <a href="/" className="diagnostic-show-all">

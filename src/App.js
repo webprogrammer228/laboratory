@@ -3,6 +3,7 @@ import Header from "./pages/Header";
 import SecondScreen from "./pages/SecondScreen";
 import ThirdScreen from "./pages/ThirdScreen";
 import FourthScreen from "./pages/FourthScreen";
+import Footer from "./pages/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <SecondScreen />
       <ThirdScreen />
       <FourthScreen />
+      <Footer />
     </Router>
   );
 }

@@ -89,6 +89,7 @@
       width: 100%;
       height: 418px;
       padding: 32px;
+      margin-bottom: 0;
     }
 
     @include breakpoint(mobile) {
@@ -172,6 +173,10 @@
     line-height: 22px;
 
     margin-bottom: 24px;
+
+    &:hover {
+      background: $orange-active;
+    }
   }
 
   .agreement {
