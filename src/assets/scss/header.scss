@@ -21,7 +21,8 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  margin-top: -42px;
+  //margin-top: -42px;
+  top: -31px;
 
   @include breakpoint(tablet) {
     height: 148px;
