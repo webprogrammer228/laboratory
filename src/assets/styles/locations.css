@@ -1,0 +1,176 @@
+.location-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 104px;
+}
+
+.location-block .left {
+  height: 460px;
+  width: 35.8%;
+  background: #ffffff;
+  font-family: "Gotham Pro", sans-serif;
+  font-style: normal;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  .location-block .left {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .location-block .left {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .location-block .left {
+    width: 100%;
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .location-block .left {
+    height: 680px;
+  }
+}
+
+.location-block .left .map-title {
+  padding: 32px 32px 0 32px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.location-block .left .map-subtitle {
+  padding: 0 32px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.location-block .left .location-list,
+.location-block .left .location-list-mobile {
+  list-style-type: none;
+}
+
+.location-block .left .location-list a,
+.location-block .left .location-list-mobile a {
+  text-decoration: none;
+}
+
+.location-block .left .location-list .location-list-item,
+.location-block .left .location-list-mobile .location-list-item {
+  padding: 5px 32px;
+  color: #2e8899;
+  cursor: pointer;
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.location-block .left .location-list .location-list-item-title,
+.location-block .left .location-list-mobile .location-list-item-title {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.location-block .left .location-list .location-list-item:hover,
+.location-block .left .location-list-mobile .location-list-item:hover {
+  background: #ecf7f9;
+}
+
+.location-block .left .location-list .location-list-item.active,
+.location-block .left .location-list-mobile .location-list-item.active {
+  margin-bottom: 0;
+  color: #f08646;
+}
+
+.location-block .left .location-list .location-list-item > div,
+.location-block .left .location-list-mobile .location-list-item > div {
+  font-size: 14px;
+  line-height: 20px;
+  color: #58595b;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 710px) {
+  .location-block .left .location-list > div,
+  .location-block .left .location-list-mobile > div {
+    max-height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .location-block .left .location-list {
+    display: none;
+  }
+}
+
+.location-block .left .location-list-mobile > div {
+  max-height: 290px !important;
+}
+
+@media screen and (min-width: 621px) {
+  .location-block .left .location-list-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .location-block .left .location-list-mobile {
+    display: block;
+  }
+}
+
+.location-block .left .location-list-mobile > div {
+  max-height: 500px !important;
+}
+
+.location-block .left .simplebar-scrollbar {
+  background-color: #00a7b5;
+  width: 3px;
+  left: 8px;
+  overflow: auto;
+}
+
+.location-block .left .simplebar-track {
+  overflow: visible;
+}
+
+.location-block .map {
+  width: 71.6%;
+}
+
+@media screen and (max-width: 1280px) {
+  .location-block .map {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .location-block .map {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .location-block .map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .location-block {
+    margin-bottom: 56px;
+  }
+}
+/*# sourceMappingURL=locations.css.map */

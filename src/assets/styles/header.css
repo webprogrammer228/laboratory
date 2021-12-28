@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Gotham Pro light";
+  src: url("../fonts/gotham_pro/gothampro_light.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro bold";
+  src: url("../fonts/gotham_pro/gothampro_bold.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro medium";
+  src: url("../fonts/gotham_pro/gothampro_medium.ttf");
+}
+
+@font-face {
+  font-family: "Myriad Pro bold";
+  src: url("../fonts/Myriad_Pro/MYRIADPRO-BOLD.OTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  height: 208px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 24px rgba(46, 136, 153, 0.08);
+          box-shadow: 0px 4px 24px rgba(46, 136, 153, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: -42px;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 148px;
+  }
+}
+
+header .border_block {
+  border: 0.5px solid #00a7b5;
+  mix-blend-mode: multiply;
+  height: 0.5px;
+  opacity: 0.24;
+}
+
+@media screen and (max-width: 992px) {
+  header .border_block {
+    display: none;
+  }
+}
+
+header .block {
+  background: white;
+}
+
+@media screen and (max-width: 992px) {
+  header .block {
+    padding-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

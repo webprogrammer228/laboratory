@@ -1,0 +1,225 @@
+.consultation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../../images/consultation.png"), rgba(236, 247, 249, 0.64);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation {
+    background: transparent;
+  }
+}
+
+.consultation .text-block {
+  font-family: "Gotham Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  white-space: pre-line;
+}
+
+.consultation .text-block__title {
+  font-size: 26px;
+  line-height: 36px;
+  color: #171d20;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .text-block__title {
+    position: absolute;
+    top: 16px;
+    left: 39px;
+    white-space: initial;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .consultation .text-block__title {
+    left: 27px;
+    white-space: pre-line;
+  }
+}
+
+.consultation .text-block__subtitle {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #58595b;
+  margin-bottom: 278px;
+}
+
+@media screen and (max-width: 1340px) {
+  .consultation .text-block__subtitle {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .text-block__subtitle {
+    visibility: visible;
+    position: absolute;
+    top: 49px;
+    left: 38px;
+    white-space: initial;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 32px 0 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .consultation .text-block__subtitle {
+    left: 27px;
+    top: 73px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .text-block .rounds-consultation {
+    display: none;
+  }
+}
+
+.consultation .consultation-desktop {
+  width: 400px;
+  height: 502px;
+  background: transparent;
+  border: 4px solid #f08646;
+  margin-bottom: 112px;
+  padding: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .consultation-desktop {
+    width: 100%;
+    height: 418px;
+    padding: 32px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .consultation .consultation-desktop {
+    height: 540px;
+    padding: 24px;
+  }
+}
+
+.consultation .consultation-desktop .form-title {
+  font-family: "Gotham Pro medium", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171d20;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .consultation-desktop .form-title {
+    display: none;
+  }
+}
+
+.consultation .consultation-desktop .contacts {
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .consultation-desktop .contacts {
+    margin-top: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .consultation .consultation-desktop .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 112px;
+  }
+}
+
+.consultation .consultation-desktop input,
+.consultation .consultation-desktop textarea {
+  padding: 14px 16px;
+  font-family: "Myriad Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+  border: 0;
+  margin-bottom: 16px;
+  width: 100%;
+  resize: none;
+  color: #58595b;
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .consultation-desktop input,
+  .consultation .consultation-desktop textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .consultation .consultation-desktop input:first-child {
+    margin-right: 16px;
+  }
+}
+
+.consultation .consultation-desktop textarea {
+  margin-bottom: 24px;
+}
+
+.consultation .consultation-send {
+  width: 100%;
+  padding: 14px 0;
+  background: #f08646;
+  border: 0;
+  cursor: pointer;
+  font-family: "Gotham Pro", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.consultation .consultation-send:hover {
+  background: #e45b26;
+}
+
+.consultation .agreement {
+  font-family: "Myriad Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #58595b;
+}
+
+.consultation .agreement-link {
+  text-decoration: none;
+  color: #00a7b5;
+}
+/*# sourceMappingURL=consultation.css.map */

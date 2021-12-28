@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Gotham Pro light";
+  src: url("../fonts/gotham_pro/gothampro_light.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro bold";
+  src: url("../fonts/gotham_pro/gothampro_bold.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro medium";
+  src: url("../fonts/gotham_pro/gothampro_medium.ttf");
+}
+
+@font-face {
+  font-family: "Myriad Pro bold";
+  src: url("../fonts/Myriad_Pro/MYRIADPRO-BOLD.OTF");
+}
+/*# sourceMappingURL=fonts.css.map */
