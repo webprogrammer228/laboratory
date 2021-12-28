@@ -14,25 +14,8 @@ body {
   scrollbar-width: 2px;
   overflow-x: hidden;
   position: relative;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  &::after {
-    content: "";
-    height: 300%;
-    width: 300%;
-    background: white;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
 }
 
 body.lock {
-  overflow: hidden;
+  //overflow: hidden;
 }
