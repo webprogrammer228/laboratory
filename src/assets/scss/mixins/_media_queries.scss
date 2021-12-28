@@ -1,0 +1,35 @@
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $point == mobile {
+    @media (min-width: 0px) and (max-width: 530px) {
+      @content;
+    }
+  }
+  @if $point == block-size {
+    @media screen and (max-width: 1428px) {
+      @content;
+    }
+  }
+
+  @if $point == search {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+
+  @if $point == beforemobile {
+    @media screen and (max-width: 700px) {
+      @content;
+    }
+  }
+
+  @if $point == big {
+    @media screen and (min-width: 1441px) {
+      @content;
+    }
+  }
+}

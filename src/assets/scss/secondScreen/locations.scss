@@ -1,0 +1,145 @@
+@import "../variables";
+@import "../mixins/media_queries";
+
+.location-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 104px;
+
+  .left {
+    height: 460px;
+    width: 35.8%;
+    background: $white;
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    overflow: hidden;
+
+    @media screen and (max-width: 1280px) {
+      width: 40%;
+    }
+
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 620px) {
+      width: 100%;
+      height: 510px;
+    }
+
+    @media screen and (max-width: 320px) {
+      height: 680px;
+    }
+
+    .map-title {
+      padding: 32px 32px 0 32px;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+
+    .map-subtitle {
+      padding: 0 32px;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .location-list,
+    .location-list-mobile {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+      }
+
+      .location-list-item {
+        padding: 5px 32px;
+        color: $primary-bold;
+        cursor: pointer;
+        font-family: "Myriad Pro", sans-serif;
+
+        &-title {
+          text-decoration: underline dotted;
+        }
+
+        &:hover {
+          background: $hoveritemlist;
+        }
+      }
+      .location-list-item.active {
+        margin-bottom: 0;
+        color: $orange;
+      }
+      .location-list-item > div {
+        font-size: 14px;
+        line-height: 20px;
+        color: $submenutext;
+        opacity: 0.8;
+        // margin-bottom: 16px;
+      }
+
+      & > div {
+        @media screen and (max-width: 710px) {
+          max-height: 250px !important;
+        }
+      }
+    }
+
+    .location-list {
+      @media screen and (max-width: 620px) {
+        display: none;
+      }
+    }
+
+    .location-list-mobile {
+      & > div {
+        max-height: 290px !important;
+      }
+
+      @media screen and (min-width: 621px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 620px) {
+        display: block;
+      }
+
+      > div {
+        max-height: 500px !important;
+      }
+    }
+
+    .simplebar-scrollbar {
+      background-color: $primary;
+      width: 3px;
+      left: 8px;
+      overflow: auto;
+    }
+    .simplebar-track {
+      overflow: visible;
+    }
+  }
+  .map {
+    width: 71.6%;
+
+    @media screen and (max-width: 1280px) {
+      width: 60%;
+    }
+
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 620px) {
+      display: none;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    margin-bottom: 56px;
+  }
+}
