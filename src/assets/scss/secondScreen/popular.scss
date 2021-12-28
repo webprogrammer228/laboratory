@@ -98,10 +98,9 @@
     }
 
     &:hover .popular-services-item-hovered {
-      transition: .9s;
+      transition: 0.9s;
       display: block;
       opacity: 1;
-
     }
 
     &:hover::before {
@@ -110,7 +109,8 @@
     }
 
     &:hover::after {
-      filter: invert(52%) sepia(77%) saturate(4198%) hue-rotate(155deg) brightness(95%) contrast(101%);
+      filter: invert(52%) sepia(77%) saturate(4198%) hue-rotate(155deg)
+        brightness(95%) contrast(101%);
     }
 
     &:first-child {
@@ -252,11 +252,11 @@
     &:last-child {
       .popular-services-item-hovered-title {
         top: 333px !important;
-        height: 100%!important;
+        height: 100% !important;
       }
       .popular-services-item-hovered-subtitle {
-        top: 385px!important;
-        height: 100%!important;
+        top: 385px !important;
+        height: 100% !important;
       }
 
       @media screen and (max-width: 1120px) {
@@ -264,14 +264,14 @@
           top: 283px !important;
         }
         .popular-services-item-hovered-subtitle {
-          top: 365px!important;
+          top: 365px !important;
         }
       }
     }
   }
 
   .popular-services-item-hovered {
-    transition: .4s;
+    transition: 0.4s;
     display: block;
     opacity: 0;
     width: 100%;

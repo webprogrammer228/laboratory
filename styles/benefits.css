@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Gotham Pro light";
+  src: url("../fonts/gotham_pro/gothampro_light.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro bold";
+  src: url("../fonts/gotham_pro/gothampro_bold.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro medium";
+  src: url("../fonts/gotham_pro/gothampro_medium.ttf");
+}
+
+@font-face {
+  font-family: "Myriad Pro bold";
+  src: url("../fonts/Myriad_Pro/MYRIADPRO-BOLD.OTF");
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 108px;
+  width: 100%;
+  font-family: "Myriad Pro", sans-serif;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits {
+    margin: 29px 0px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .benefits {
+    height: 100%;
+    margin: 29px 0px 21px;
+  }
+}
+
+.benefits > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .benefits > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+  }
+}
+
+.benefits > div img {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits > div img {
+    width: 39px;
+    height: 42px;
+    margin-right: 8px;
+  }
+}
+
+.benefits .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 298px;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits .text {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .benefits .text {
+    margin-top: 7px;
+  }
+}
+
+.benefits .text .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #171d20;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits .text .title {
+    font-size: 12.6px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .benefits .text .title {
+    line-height: 22px;
+    font-family: "Myriad Pro bold";
+  }
+}
+
+.benefits .text .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.9px;
+  line-height: 24px;
+  color: #58595b;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits .text .description {
+    display: none;
+  }
+}
+/*# sourceMappingURL=benefits.css.map */

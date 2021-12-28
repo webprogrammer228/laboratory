@@ -1,0 +1,19 @@
+.container {
+  margin: 41px calc(20% - 139.2px) 0;
+  padding-top: 231px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding-top: 130px;
+    margin: 34px calc(14px + 3.3%);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .container {
+    margin: 23px 10px 0 10px;
+  }
+}
+/*# sourceMappingURL=container.css.map */
