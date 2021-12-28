@@ -1,5 +1,10 @@
 @import "./header.scss";
 @import "./variables";
+
+html {
+  background: white;
+}
+
 body {
   background: $hoveritemlist;
   scrollbar-color: $primary-bold;

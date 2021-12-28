@@ -7,11 +7,11 @@
   overflow: hidden;
 
   @include breakpoint(tablet) {
-    padding-top: 170px;
+    padding-top: 130px;
     margin: 34px calc(14px + 3.3%);
   }
 
   @include breakpoint(mobile) {
-    margin: 23px 10px 0 16px;
+    margin: 23px 10px 0 10px;
   }
 }
