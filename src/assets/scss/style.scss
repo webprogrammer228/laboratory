@@ -1,0 +1,11 @@
+@import "./header.scss";
+@import "./variables";
+body {
+  background: $hoveritemlist;
+  scrollbar-color: $primary-bold;
+  scrollbar-width: 2px;
+}
+
+body.lock {
+  overflow: hidden;
+}
