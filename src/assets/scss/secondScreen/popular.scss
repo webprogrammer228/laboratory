@@ -1,5 +1,7 @@
 @import "../variables";
 @import "../mixins/media_queries";
+@import "../../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../../node_modules/swiper/swiper.min.css";
 
 .popular {
   font-family: "Gotham Pro", sans-serif;
