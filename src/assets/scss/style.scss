@@ -13,6 +13,7 @@ body {
   background: $hoveritemlist;
   scrollbar-color: $primary-bold;
   scrollbar-width: 2px;
+  overflow-x: auto;
 }
 
 body.lock {

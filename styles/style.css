@@ -88,6 +88,7 @@ body {
   background: #ecf7f9;
   scrollbar-color: #2e8899;
   scrollbar-width: 2px;
+  overflow-x: auto;
 }
 
 body.lock {
