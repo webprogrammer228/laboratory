@@ -2,8 +2,11 @@
 @import "../mixins/media_queries";
 @import "./swiper-bundle.css";
 @import "./swiper.min.css";
-// @import "./swiper-bundle.min.css";
-// @import "./swiper.min.css";
+@font-face { 
+  font-family: "rouble";
+  src: url("../../fonts/rouble.otf") format("opentype");
+}
+.rub { font-family: "rouble"; }
 
 .popular {
   font-family: "Gotham Pro", sans-serif;
@@ -183,10 +186,10 @@
     &:nth-child(6)::after {
       background-color: #fff;
       mask-image: url("../../images/popular-third-icon.svg");
-      top: 39px;
+      top: 37px;
       left: 38px;
       width: 26px;
-      height: 25.98px;
+      height: 32.48px;
     }
     &:nth-child(4)::after {
       background-image: url("../../images/popular-fourth-icon.svg");
@@ -242,7 +245,7 @@
       font-size: 18px;
       line-height: 26px;
       color: $primary-bold;
-      font-weight: bold;
+      font-weight: 500;
       position: absolute;
       top: 140px;
       padding: 0 24px;
@@ -253,6 +256,8 @@
       .popular-services-item-hovered-title {
         top: 333px !important;
         height: 100% !important;
+
+        font-weight: 500;
       }
       .popular-services-item-hovered-subtitle {
         top: 385px !important;
@@ -281,6 +286,10 @@
     left: 0;
 
     p.dotted-price {
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+
       position: absolute;
       top: 24px;
       right: 24px;
@@ -289,6 +298,7 @@
       line-height: 20px;
     }
     p.price {
+      font-family: "Gotham Pro normal", sans-serif;
       position: absolute;
       top: 44px;
       right: 24px;
@@ -302,7 +312,7 @@
       font-size: 18px;
       line-height: 26px;
       color: $white;
-      font-weight: bold;
+      font-weight: 500;
       position: absolute;
       top: 110px;
       padding: 0 24px;
@@ -319,6 +329,12 @@
         position: absolute;
         top: 160px;
         padding: 0 24px;
+
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
 
         @media screen and (max-width: 1100px) {
           top: 140px;

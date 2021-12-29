@@ -41,7 +41,7 @@ header {
   }
 
   @include breakpoint(tablet) {
-    height: 148px;
+    height: 148px!important;
   }
 
   // разделяющая линия между авторизацией и блоком с логотипом
