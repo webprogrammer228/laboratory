@@ -17,7 +17,7 @@ body {
   background: $hoveritemlist;
   scrollbar-color: $primary-bold;
   scrollbar-width: 2px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 body.lock {

@@ -108,6 +108,12 @@
         display: block;
       }
 
+      @include breakpoint(mobile) {
+        li:hover {
+          background: transparent!important;
+        }
+      }
+
       > div {
         max-height: 500px !important;
       }

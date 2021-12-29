@@ -17,6 +17,7 @@
 
 .swiper {
   margin-bottom: 72px;
+  overflow: visible;
 
   @include breakpoint(tablet) {
     margin-bottom: 34px;

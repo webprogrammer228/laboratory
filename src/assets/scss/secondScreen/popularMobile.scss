@@ -30,6 +30,10 @@
       z-index: 100;
     }
   }
+.swiper {
+  overflow: visible;
+}
+
   .swiper-slide {
     width: 200px;
     height: 156px;
@@ -62,9 +66,9 @@
       background-color: #fff;
       mask-image: url("../../images/popular-third-icon.svg");
       left: 16px;
-      top: 17px;
+      top: 15px;
       width: 26px;
-      height: 25.98px;
+      height: 32.28px;
     }
     &:nth-child(4)::after {
       background-image: url("../../images/popular-fourth-icon.svg");
@@ -110,9 +114,9 @@
     }
     &:last-child::after {
       background-image: url("../../images/popular-ten-icon.svg");
-      left: 14px;
+      left: 13.5px;
       top: 15px;
-      width: 32px;
+      width: 32.8px;
       height: 32px;
     }
   }

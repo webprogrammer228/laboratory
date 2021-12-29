@@ -84,7 +84,7 @@ const ItemListMobile = ({
       <li
         key={id}
         id={id}
-        className={`location-list-item${isSelected ? " active" : ""}`}
+        className={`location-list-item`}
         onClick={onClick}
       >
         <span className="location-list-item-title">{title}</span>

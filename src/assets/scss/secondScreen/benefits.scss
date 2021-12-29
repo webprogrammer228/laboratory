@@ -8,7 +8,6 @@
   height: 108px;
   width: 100%;
   font-family: "Myriad Pro", sans-serif;
-  // margin-left: -5px;
   margin-top: 64px;
 
   @include breakpoint(tablet) {
@@ -26,7 +25,7 @@
 
     @include breakpoint(mobile) {
       flex-direction: column;
-      width: 100px;
+      width: 90px;
     }
 
     img {
@@ -69,7 +68,10 @@
 
       @include breakpoint(mobile) {
         line-height: 22px;
-        font-family: "Myriad Pro bold";
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
       }
     }
     .description {
