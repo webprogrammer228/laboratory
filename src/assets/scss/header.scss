@@ -23,25 +23,8 @@ header {
   width: 100%;
   margin-top: -42px;
 
-  // &:hover > div > .top-info {
-  //   margin-top: 7px !important;
-  //   height: 40px !important;
-  //   visibility: visible !important;
-  //   transition: all 0.3s ease 0s !important;
-  // }
-
-  &:hover > div > .bottom_info {
-    margin-top: 0px !important;
-    height: 80px !important;
-    visibility: visible !important;
-  }
-
-  &:hover {
-    height: 168px !important;
-  }
-
   @include breakpoint(tablet) {
-    height: 148px!important;
+    height: 148px;
   }
 
   // разделяющая линия между авторизацией и блоком с логотипом
@@ -63,5 +46,62 @@ header {
     @include breakpoint(tablet) {
       padding-bottom: 15px;
     }
+  }
+}
+
+.lab-header.large {
+  transition: all 0.3s;
+  height: 96px;
+
+  .top-info {
+    visibility: hidden;
+    height: 0;
+    margin-top: -10px;
+    transition: all 0.3s;
+  }
+  .bottom_info {
+    visibility: hidden;
+    height: 0;
+    margin-top: -150px;
+    transition: all 0.5s;
+  }
+
+  &:hover > div > .top-info {
+    margin-top: 7px !important;
+    height: 40px !important;
+    visibility: visible !important;
+    transition: all 0.3s ease 0s !important;
+  }
+
+  &:hover > div > .bottom_info {
+    margin-top: 0px !important;
+    height: 80px !important;
+    visibility: visible !important;
+  }
+
+  &:hover {
+    height: 168px !important;
+  }
+}
+
+.lab-header.md {
+  height: 96px;
+
+  .bottom_info {
+    visibility: hidden;
+    height: 0;
+    margin-top: -150px;
+    transition: all 0.5s;
+  }
+}
+
+.lab-header.small {
+  height: 90px;
+
+  .bottom_info {
+    visibility: hidden;
+    height: 0;
+    margin-top: -150px;
+    transition: all 0.5s;
   }
 }

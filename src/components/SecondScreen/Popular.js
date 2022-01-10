@@ -82,9 +82,13 @@ const PopularElem = ({ id, title, dottedPrice, price, hoverSubtitle }) => {
       <h3 className="popular-services-item-text">{title}</h3>
       <div className="popular-services-item-hovered">
         <p className="dotted-price">
-          <del>{dottedPrice} <span class="rub">i</span></del>
+          <del>
+            {dottedPrice} <span className="rub">i</span>
+          </del>
         </p>
-        <p className="price">{price} <span class="rub">i</span></p>
+        <p className="price">
+          {price} <span className="rub">i</span>
+        </p>
         <h3 className="popular-services-item-hovered-title">{title}</h3>
         <p className="popular-services-item-hovered-subtitle">
           {hoverSubtitle}

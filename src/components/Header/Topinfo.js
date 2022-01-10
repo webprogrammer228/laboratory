@@ -1,41 +1,31 @@
 import left_arrow from "../../assets/images/left-arrow.svg";
 import eye from "../../assets/images/eye.svg";
 import person from "../../assets/images/person.svg";
-import '../../assets/scss/header/top.scss';
+import "../../assets/scss/header/top.scss";
 
 import { Link } from "react-router-dom";
 
 function Topinfo() {
-
-  window.onscroll = function() {
+  window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrolled >= 80) {
-      document.querySelector(".top-info").style.visibility = 'hidden';
-      document.querySelector(".top-info").style.height = '0';
-      document.querySelector(".top-info").style.marginTop = '-10px';
-      document.querySelector(".top-info").style.transition = 'all .3s';
-      
-      document.querySelector(".bottom_info").style.visibility = 'hidden';
-      document.querySelector(".bottom_info").style.height = '0';
-      document.querySelector(".bottom_info").style.marginTop = '-150px';
-      document.querySelector(".bottom_info").style.transition = 'all .5s';
-
-
-      document.querySelector(".lab-header").style.height = '96px';
+    if (scrolled >= 80 && window.innerWidth > 993) {
+      document.querySelector(".lab-header").classList.add("large");
+    } else if (
+      scrolled >= 80 &&
+      window.innerWidth < 993 &&
+      window.innerWidth > 553
+    ) {
+      document.querySelector(".lab-header").classList.remove("large");
+      document.querySelector(".lab-header").classList.add("md");
+    } else if (scrolled >= 80 && window.innerWidth < 552) {
+      document.querySelector(".lab-header").classList.remove("md");
+      document.querySelector(".lab-header").classList.add("small");
+    } else {
+      document.querySelector(".lab-header").classList.remove("md");
+      document.querySelector(".lab-header").classList.remove("small");
+      document.querySelector(".lab-header").classList.remove("large");
     }
-    else {
-      document.querySelector(".top-info").style.marginTop = '7px';
-      document.querySelector(".top-info").style.height = '40px';
-      document.querySelector(".top-info").style.visibility = 'visible';
-
-      document.querySelector(".bottom_info").style.marginTop = '0px';
-      document.querySelector(".bottom_info").style.height = '80px';
-      document.querySelector(".bottom_info").style.visibility = 'visible';
-
-      document.querySelector(".lab-header").style.height = '208px';
-    }
-  }
-
+  };
 
   return (
     <>
