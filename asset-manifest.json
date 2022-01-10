@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laboratory/static/css/main.825b3bec.css",
-    "main.js": "/laboratory/static/js/main.572b200e.js",
+    "main.css": "/laboratory/static/css/main.f82e46f7.css",
+    "main.js": "/laboratory/static/js/main.4680fd65.js",
     "static/media/background-bg.jpg": "/laboratory/static/media/background-bg.ab33888d8c71b36bdaec.jpg",
     "static/media/background-sm.jpg": "/laboratory/static/media/background-sm.2eb04b325039d5279678.jpg",
     "static/media/consultation.png": "/laboratory/static/media/consultation.55aeb545c83c61d22b5e.png",
@@ -34,7 +34,7 @@
     "static/media/clock-icon.svg": "/laboratory/static/media/clock-icon.dba4560a6a86041e70edc23fd150f53a.svg",
     "static/media/eye-footer.svg": "/laboratory/static/media/eye-footer.624b4b6796ac5c768f0d34a96648a71c.svg",
     "static/media/reward-white.svg": "/laboratory/static/media/reward-white.c744a136ae10e58f9c0a319a9285509b.svg",
-    "static/media/eye.svg": "/laboratory/static/media/eye.35374ae91b8d0279f818c56204819942.svg",
+    "static/media/eye.svg": "/laboratory/static/media/eye.fb1ec7eb1b9a36b57ec540f55d439fa7.svg",
     "static/media/syringe-white.svg": "/laboratory/static/media/syringe-white.fca1504f6e863ad6375bd307e293e733.svg",
     "static/media/popular-first-icon.svg": "/laboratory/static/media/popular-first-icon.72341163ccc9e2ab22b3.svg",
     "static/media/popular-sixth-icon.svg": "/laboratory/static/media/popular-sixth-icon.7501bf62cd26628c1397.svg",
@@ -62,11 +62,11 @@
     "static/media/check.svg": "/laboratory/static/media/check.4607e06c5ced93250efb.svg",
     "static/media/right-arrow.svg": "/laboratory/static/media/right-arrow.caa9f928ad3a8b12cc4e.svg",
     "static/media/left-arrow.svg": "/laboratory/static/media/left-arrow.9c86a8f88de92e1a6aaa9e8630cd9792.svg",
-    "main.825b3bec.css.map": "/laboratory/static/css/main.825b3bec.css.map",
-    "main.572b200e.js.map": "/laboratory/static/js/main.572b200e.js.map"
+    "main.f82e46f7.css.map": "/laboratory/static/css/main.f82e46f7.css.map",
+    "main.4680fd65.js.map": "/laboratory/static/js/main.4680fd65.js.map"
   },
   "entrypoints": [
-    "static/css/main.825b3bec.css",
-    "static/js/main.572b200e.js"
+    "static/css/main.f82e46f7.css",
+    "static/js/main.4680fd65.js"
   ]
 }
