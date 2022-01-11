@@ -18,28 +18,28 @@ const FooterBottom = () => {
       </div>
 
       <div className="bottom__privacy">
-        <a href="/" className="politic">
+        <a href="#" className="politic">
           Политика обработки персональных данных
         </a>
-        <a href="/" className="agreement">
+        <a href="#" className="agreement">
           Пользовательское соглашение
         </a>
       </div>
 
       <div className="footer_socials">
-        <a href="/" className="footer_socials__vk">
+        <a href="#" className="footer_socials__vk">
           <img src={Vk} alt="footer-vk-icon" />
         </a>
 
-        <a href="/" className="footer_socials__insta">
+        <a href="#" className="footer_socials__insta">
           <img src={Insta} alt="footer-insta-icon" />
         </a>
 
-        <a href="/" className="footer_socials__fb">
+        <a href="#" className="footer_socials__fb">
           <img src={Fb} alt="footer-fb-icon" />
         </a>
 
-        <a href="/" className="footer_socials__youtube">
+        <a href="#" className="footer_socials__youtube">
           <img src={Youtube} alt="footer-youtube-icon" />
         </a>
       </div>

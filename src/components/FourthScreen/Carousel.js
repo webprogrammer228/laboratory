@@ -85,7 +85,7 @@ let subtitle = Object.values(data.subtitles);
 
 const SlideElem = ({ img, date, title, subtitle }) => {
   return (
-    <a href="/" className="carousel-article">
+    <a href="#" className="carousel-article">
       <div className="article-block">
         <img
           className="desktop-banner"
@@ -131,7 +131,7 @@ const ArticleCarouselElem = () => {
       >
         {slides}
       </Swiper>
-      <a className="show-all-articles__link" href="/">
+      <a className="show-all-articles__link" href="#">
         <button className="show-all-articles">Посмотреть все статьи</button>
       </a>
     </React.Fragment>

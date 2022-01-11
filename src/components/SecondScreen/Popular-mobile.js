@@ -51,7 +51,7 @@ const data = {
 
 const PopularElemMobile = ({ id, title, dottedPrice, price }) => {
   return (
-      <a href="/" className="popular-services-item-mobile" key={id}>
+      <a href="#" className="popular-services-item-mobile" key={id}>
         <div className="popular-services-item-text-mobile">
           <p className="popular-services-item-title-mobile">{title}</p>
           <p className="dotted-price">

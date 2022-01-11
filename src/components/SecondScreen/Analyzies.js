@@ -26,7 +26,7 @@ let items = Object.values(data.items);
 const AnalyziesList = ({ id, title }) => {
   return (
     <li className="diagnostic-item" key={id}>
-      <a href="/" className="diagnostic-item-list">
+      <a href="#" className="diagnostic-item-list">
         {title}
       </a>
     </li>
@@ -45,7 +45,7 @@ const Analyzies = () => {
               <AnalyziesList key={id} title={items[id]} />
             ))}
           </ul>
-          <a href="/" className="diagnostic-show-all">
+          <a href="#" className="diagnostic-show-all">
             Посмотреть все виды исследований
           </a>
         </div>

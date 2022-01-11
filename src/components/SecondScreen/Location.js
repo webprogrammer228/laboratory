@@ -14,7 +14,6 @@ const object = {
     title2: "пр. Карла Маркса, 15",
     title3: "пр. Карла Маркса, 15",
     title4: "пр. Карла Маркса, 15",
-    title5: "пр. Карла Маркса, 15",
   },
   time: {
     time: "ПН-СБ с 8:00 до 20:00, ВС с 9:00 до 18:00",
@@ -73,7 +72,6 @@ const ItemListDesktop = ({ id, onClick, isSelected, adress, time, title }) => {
 const ItemListMobile = ({
   id,
   onClick,
-  isSelected,
   adress,
   time,
   title,

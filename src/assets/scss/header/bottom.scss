@@ -13,6 +13,7 @@
     height: 48px;
     margin-left: -3px;
     margin-right: calc(60% - 485px);
+    transition: all 0.4s;
 
     @include breakpoint(tablet) {
       height: 44px;
@@ -25,6 +26,12 @@
     }
     @include breakpoint(big) {
       margin-right: 0;
+    }
+
+    &.active {
+      transition: all 0.4s;
+      width: 100%;
+      margin-right: 20px;
     }
 
     .index_search {
@@ -50,11 +57,24 @@
         padding-left: 23.72px;
         padding-bottom: 15px;
       }
+
+      &:hover {
+        border: 1px solid $primary;
+      }
+
+      &.active {
+        background: $white;
+        transition: all 0.4s;
+        width: 100%;
+        border: 1px solid $orange;
+      }
     }
+
     img {
       position: absolute;
       top: 15px;
       right: 17px;
+      transition: all 0.4s;
 
       @include breakpoint(tablet) {
         top: 12px;
@@ -67,6 +87,53 @@
       }
     }
   }
+
+  .search-results {
+    margin-top: 4px;
+    background: $white;
+    font-family: "Myriad Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    overflow: hidden;
+
+    .search-list {
+      list-style-type: none;
+
+    & > div {
+        max-height: 200px!important;
+      }
+    }
+
+    .search-list-item {
+      padding: 8px 12px;
+
+      cursor: pointer;
+
+      &-title {
+        text-decoration: none;
+        color: $submenutext;
+      }
+
+      &:hover {
+        background: $hoveritemlist;
+      }
+    }
+  }
+
+  .simplebar-scrollbar {
+    background-color: $primary;
+    width: 3px;
+    left: 8px;
+    overflow: auto;
+    height: 100px;
+  }
+  .simplebar-track {
+    overflow: visible;
+  }
+
 
   .navbar {
     width: 100%;

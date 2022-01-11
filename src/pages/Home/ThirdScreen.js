@@ -1,4 +1,4 @@
-import MainBlock from "../components/ThirdScreen/MainBlock";
+import MainBlock from "../../components/ThirdScreen/MainBlock";
 
 const ThirdScreen = () => {
   return <MainBlock />;

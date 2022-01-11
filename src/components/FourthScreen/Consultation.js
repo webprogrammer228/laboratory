@@ -37,7 +37,7 @@ const Consultation = () => {
 
         <p className="agreement">
           Отправляя форму, вы даете {""}
-          <a className="agreement-link" href="/">
+          <a className="agreement-link" href="#">
             Согласие на обработку персональных данных.{" "}
           </a>
         </p>

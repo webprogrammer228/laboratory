@@ -3,8 +3,6 @@ import eye from "../../assets/images/eye.svg";
 import person from "../../assets/images/person.svg";
 import "../../assets/scss/header/top.scss";
 
-import { Link } from "react-router-dom";
-
 function Topinfo() {
   window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -36,17 +34,17 @@ function Topinfo() {
             src={left_arrow}
             alt="arrow"
           />
-          <Link className="link-back" to="/">
+          <a href="#" className="link-back" to="#">
             Назад на главную
-          </Link>
+          </a>
         </div>
         <div className="top-info_right-block">
           <img className="eye" src={eye} alt="eye" />
           <div className="cabinet">
             <img className="person" src={person} alt="person" />
-            <Link className="link-cabinet" to="/">
+            <a href="#" className="link-cabinet" to="#">
               Личный кабинет
-            </Link>
+            </a>
           </div>
         </div>
       </div>

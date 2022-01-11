@@ -77,7 +77,7 @@ const data = {
 
 const PopularElem = ({ id, title, dottedPrice, price, hoverSubtitle }) => {
   return (
-    <a href="/" className="popular-services-item" key={id}>
+    <a href="#" className="popular-services-item" key={id}>
       <div className="block-wrapper"></div>
       <h3 className="popular-services-item-text">{title}</h3>
       <div className="popular-services-item-hovered">
@@ -131,7 +131,7 @@ const Popular = () => {
         <div className="popular-header">
           <h1 className="popular-header__title">Услуги лаборатории</h1>
           <div className="categories">
-            <a className="popular-header__category-link" href="/">
+            <a className="popular-header__category-link" href="#">
               Все услуги
             </a>
           </div>

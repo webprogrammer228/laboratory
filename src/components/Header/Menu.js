@@ -15,14 +15,14 @@ const Menu = ({ active, setActive, patient, setPatientActive }) => {
         <div className="menu__content" onClick={(e) => e.stopPropagation()}>
           <div className="nav">
             <ul className="nav-menu">
-              <a href="/" className="nav-menu-item-link">
+              <a href="#" className="nav-menu-item-link">
                 <li
                   className={patient ? "nav-menu-item hidden" : "nav-menu-item"}
                 >
                   Личный кабинет
                 </li>
               </a>
-              <a href="/" className="nav-menu-item-link">
+              <a href="#" className="nav-menu-item-link">
                 <li
                   className={patient ? "nav-menu-item hidden" : "nav-menu-item"}
                 >
@@ -30,7 +30,7 @@ const Menu = ({ active, setActive, patient, setPatientActive }) => {
                 </li>
               </a>
 
-              <a href="/" className="nav-menu-item-link">
+              <a href="#" className="nav-menu-item-link">
                 <li
                   className={patient ? "nav-menu-item hidden" : "nav-menu-item"}
                 >
@@ -38,7 +38,7 @@ const Menu = ({ active, setActive, patient, setPatientActive }) => {
                 </li>
               </a>
 
-              <a href="/" className="nav-menu-item-link">
+              <a href="#" className="nav-menu-item-link">
                 <li
                   className={patient ? "nav-menu-item hidden" : "nav-menu-item"}
                 >
@@ -59,22 +59,22 @@ const Menu = ({ active, setActive, patient, setPatientActive }) => {
               <div
                 className={patient ? "patient-block active" : "patient-block"}
               >
-                <a href="/" className="nav-menu-item-link">
+                <a href="#" className="nav-menu-item-link">
                   <li className="nav-menu-item">Анализы на дому</li>
                 </a>
-                <a href="/" className="nav-menu-item-link">
+                <a href="#" className="nav-menu-item-link">
                   <li className="nav-menu-item">После COVID-19</li>
                 </a>
-                <a href="/" className="nav-menu-item-link">
+                <a href="#" className="nav-menu-item-link">
                   <li className="nav-menu-item">Дородовая диагностика</li>
                 </a>
-                <a href="/" className="nav-menu-item-link">
+                <a href="#" className="nav-menu-item-link">
                   <li className="nav-menu-item">Адреса лабораторий</li>
                 </a>
               </div>
               {/* end dropdown block */}
 
-              <a href="/" className="nav-menu-item-link">
+              <a href="#" className="nav-menu-item-link">
                 <li
                   className={patient ? "nav-menu-item hidden" : "nav-menu-item"}
                 >

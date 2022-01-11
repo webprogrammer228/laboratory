@@ -1,5 +1,5 @@
-import Articles from "../components/FourthScreen/Articles";
-import Consultation from "../components/FourthScreen/Consultation";
+import Articles from "../../components/FourthScreen/Articles";
+import Consultation from "../../components/FourthScreen/Consultation";
 
 const FourthScreen = () => {
   return (

@@ -28,19 +28,19 @@ const FooterTop = () => {
         </div>
 
         <div className="footer_socials">
-          <a href="/" className="footer_socials__vk">
+          <a href="#" className="footer_socials__vk">
             <img src={Vk} alt="footer-vk-icon" />
           </a>
 
-          <a href="/" className="footer_socials__insta">
+          <a href="#" className="footer_socials__insta">
             <img src={Insta} alt="footer-insta-icon" />
           </a>
 
-          <a href="/" className="footer_socials__fb">
+          <a href="#" className="footer_socials__fb">
             <img src={Fb} alt="footer-fb-icon" />
           </a>
 
-          <a href="/" className="footer_socials__youtube">
+          <a href="#" className="footer_socials__youtube">
             <img src={Youtube} alt="footer-youtube-icon" />
           </a>
         </div>
@@ -55,32 +55,32 @@ const FooterTop = () => {
         <h2 className="footer_patients__title">Пациентам</h2>
         <ul className="footer_patients__list">
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               Новости
             </a>
           </li>
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               Акции
             </a>
           </li>
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               Анализы на дому
             </a>
           </li>
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               После COVID-19
             </a>
           </li>
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               Дородовая диагностика
             </a>
           </li>
           <li className="footer_patients__list-item">
-            <a href="/" className="footer_patients__list-item-link">
+            <a href="#" className="footer_patients__list-item-link">
               Адреса лабораторий
             </a>
           </li>
@@ -90,27 +90,27 @@ const FooterTop = () => {
         <h2 className="footer_about__title">О нас</h2>
         <ul className="footer_about_list">
           <li className="footer_about__list-item">
-            <a href="/" className="footer_about__list-item-link">
+            <a href="#" className="footer_about__list-item-link">
               О лаборатории
             </a>
           </li>
           <li className="footer_about__list-item">
-            <a href="/" className="footer_about__list-item-link">
+            <a href="#" className="footer_about__list-item-link">
               Нормативные документы
             </a>
           </li>
           <li className="footer_about__list-item">
-            <a href="/" className="footer_about__list-item-link">
+            <a href="#" className="footer_about__list-item-link">
               Вакансии
             </a>
           </li>
           <li className="footer_about__list-item">
-            <a href="/" className="footer_about__list-item-link">
+            <a href="#" className="footer_about__list-item-link">
               Оборудование и оснащение
             </a>
           </li>
           <li className="footer_about__list-item">
-            <a href="/" className="footer_about__list-item-link">
+            <a href="#" className="footer_about__list-item-link">
               Новости
             </a>
           </li>
@@ -127,7 +127,7 @@ const FooterTop = () => {
 
         <p className="message-title">Telegram</p>
         <div className="message-block">
-          <a href="/">
+          <a href="#">
             <img
               className="message-block__telegram-icon"
               src={Telegram}
