@@ -1,6 +1,6 @@
-import "../../assets/scss/header/menu.scss";
-import "../../assets/scss/header/middle.scss";
-import "../../assets/scss/header/bottom.scss";
+import "../../assets/scss/Home/header/menu.scss";
+import "../../assets/scss/Home/header/middle.scss";
+import "../../assets/scss/Home/header/bottom.scss";
 import telephone_icon from "../../assets/images/telephone_for_mobilev.svg";
 import email_mobile from "../../assets/images/email_for_mobilev.svg";
 

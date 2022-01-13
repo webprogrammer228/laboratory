@@ -1,4 +1,4 @@
-import "../../assets/scss/thirdScreen/main.scss";
+import "../../assets/scss/Home/thirdScreen/main.scss";
 import WhiteLogo from "../../assets/images/logo-white.svg";
 import Rounds from "../../assets/images/rounds.svg";
 import Video from "../../assets/images/video.jpg";

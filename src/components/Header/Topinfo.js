@@ -1,7 +1,9 @@
 import left_arrow from "../../assets/images/left-arrow.svg";
 import eye from "../../assets/images/eye.svg";
 import person from "../../assets/images/person.svg";
-import "../../assets/scss/header/top.scss";
+import "../../assets/scss/Home/header/top.scss";
+
+import { Link } from "react-router-dom";
 
 function Topinfo() {
   window.onscroll = function () {
@@ -34,15 +36,15 @@ function Topinfo() {
             src={left_arrow}
             alt="arrow"
           />
-          <a href="#" className="link-back" to="#">
+          <Link to="/laboratory" className="link-back">
             Назад на главную
-          </a>
+          </Link>
         </div>
         <div className="top-info_right-block">
           <img className="eye" src={eye} alt="eye" />
           <div className="cabinet">
             <img className="person" src={person} alt="person" />
-            <a href="#" className="link-cabinet" to="#">
+            <a href="#" className="link-cabinet">
               Личный кабинет
             </a>
           </div>

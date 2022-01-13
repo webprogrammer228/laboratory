@@ -1,4 +1,4 @@
-import "../../assets/scss/secondScreen/benefits.scss";
+import "../../assets/scss/Home/secondScreen/benefits.scss";
 import clock from "../../assets/images/clock-icon.svg";
 import microscope from "../../assets/images/microscope-icon.svg";
 import file from "../../assets/images/file-icon.svg";

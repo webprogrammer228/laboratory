@@ -1,7 +1,7 @@
 import banner_desktop from "../../assets/images/banner-desktop.jpg";
 import banner_mobile from "../../assets/images/mobile-banner.jpg";
 import { Carousel } from "react-bootstrap";
-import "../../assets/scss/secondScreen/_carousel.scss";
+import "../../assets/scss/Home/secondScreen/_carousel.scss";
 
 const CarouselElem = () => {
   return (

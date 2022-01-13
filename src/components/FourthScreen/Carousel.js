@@ -1,7 +1,7 @@
 import FirstImg from "../../assets/images/article-carousel-item1.jpg";
 import SecondImg from "../../assets/images/article-carousel-item2.jpg";
 import ThirdImg from "../../assets/images/article-carousel-item3.jpg";
-import "../../assets/scss/fourthScreen/articles.scss";
+import "../../assets/scss/Home/fourthScreen/articles.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import React from "react";

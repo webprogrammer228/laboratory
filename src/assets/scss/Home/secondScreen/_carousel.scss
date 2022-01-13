@@ -1,7 +1,7 @@
 @import "./clearfix";
 @import "./_transition";
-@import "../variables";
-@import "../mixins/media_queries";
+@import "../../variables";
+@import "../../mixins/media_queries";
 
 // Notes on the classes:
 //
@@ -135,7 +135,7 @@
   //  linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001)),
   //  null
   //);
-  background-image: url("../../images/left-arrow-slider.svg");
+  background-image: url("../../../images/left-arrow-slider.svg");
   opacity: 1;
   .visually-hidden {
     display: none;
@@ -152,7 +152,7 @@
   //  null
   //);
   opacity: 1;
-  background-image: url("../../images/right-arrow-slider.svg");
+  background-image: url("../../../images/right-arrow-slider.svg");
   .visually-hidden {
     display: none;
   }

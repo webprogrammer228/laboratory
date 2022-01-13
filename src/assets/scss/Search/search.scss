@@ -1,0 +1,196 @@
+@import "../variables";
+
+.search-result__title {
+  font-family: "Gotham Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: $dark;
+  margin-bottom: 32px;
+}
+
+.filter-block {
+  width: 100%;
+  display: flex;
+  font-family: "Myriad Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $submenutext;
+  margin-bottom: 16px;
+
+  .css-319lph-ValueContainer {
+    min-width: 183px;
+    height: 100%;
+
+    input {
+      height: 100%;
+    }
+  }
+
+  .css-b62m3t-container {
+    margin-right: 8px;
+  }
+  .css-1pahdxg-control,
+  .css-1pahdxg-control:hover {
+    border-color: $primary;
+    box-shadow: 0 0 0 1px $primary;
+    height: 40px;
+  }
+
+  .css-1s2u09g-control {
+    height: 40px;
+  }
+
+  &__title {
+    align-self: center;
+    margin-right: 24px;
+  }
+
+  input {
+    font-family: "Myriad Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $submenutext;
+
+    padding: 8px 12px;
+    border: 0;
+    margin-right: 8px;
+    width: 183px;
+    height: 40px;
+  }
+
+  .department-search {
+    cursor: pointer;
+  }
+}
+
+.filter-separator {
+  background: $primary-bold;
+  opacity: 0.08;
+  margin-bottom: 24px;
+}
+
+.search-services {
+  height: auto;
+  background: $white;
+  max-width: 852px;
+  margin-bottom: 24px;
+  padding: 24px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &_left-block {
+      display: flex;
+      align-items: center;
+
+      .menu-block {
+        display: flex;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      .title {
+        font-family: "Gotham Pro bold", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-right: 8px;
+
+        color: $dark;
+      }
+      .doctors-counter {
+        font-family: "Gotham Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+
+        color: $secondary;
+      }
+    }
+
+    &_right-block {
+      .all-doctors {
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  .doctor-card {
+    height: 168px;
+    width: 100%;
+    background: $hoveritemlist;
+    margin-bottom: 8px;
+    display: flex;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin: 17.87px 17.6px 9.33px 9.33px;
+    }
+
+    .doctor-text {
+      display: flex;
+      flex-direction: column;
+
+      &__doctor-name {
+        font-family: "Gotham Pro bold", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+
+        width: fit-content;
+
+        padding: 4px 8px;
+        background: rgba(254, 254, 254, 0.64);
+        margin-top: 20px;
+        margin-bottom: 12px;
+      }
+
+      &__qualification {
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $searchqualification;
+        margin-bottom: 10px;
+      }
+
+      &__appointment {
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: $searchqualification;
+        opacity: 0.7;
+      }
+    }
+  }
+}

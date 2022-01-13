@@ -1,4 +1,4 @@
-import "../../assets/scss/secondScreen/analyzies.scss";
+import "../../assets/scss/Home/secondScreen/analyzies.scss";
 import CarouselElem from "./Carousel";
 import Benefits from "./Benefits";
 

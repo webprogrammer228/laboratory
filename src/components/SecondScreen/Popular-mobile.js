@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../assets/scss/secondScreen/popularMobile.scss";
+import "../../assets/scss/Home/secondScreen/popularMobile.scss";
 import { useEffect } from "react";
 
 const data = {

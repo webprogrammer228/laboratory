@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins/media_queries";
+@import "../../variables";
+@import "../../mixins/media_queries";
 // !!!!!! ЦЕНТРАЛЬНЫЙ БЛОК !!!!!!
 .center_info {
   height: 50px;
@@ -191,7 +191,7 @@
     .appointment-mini {
       width: 44px;
       height: 44px;
-      background-image: url("../../images/tablet-button.svg");
+      background-image: url("../../../images/tablet-button.svg");
       border: none;
       cursor: pointer;
       display: none;

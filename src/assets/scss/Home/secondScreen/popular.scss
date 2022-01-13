@@ -1,10 +1,10 @@
-@import "../variables";
-@import "../mixins/media_queries";
+@import "../../variables";
+@import "../../mixins/media_queries";
 @import "./swiper-bundle.css";
 @import "./swiper.min.css";
 @font-face { 
   font-family: "rouble";
-  src: url("../../fonts/rouble.otf") format("opentype");
+  src: url("../../../fonts/rouble.otf") format("opentype");
 }
 .rub { font-family: "rouble"; }
 
@@ -170,14 +170,14 @@
     }
 
     &:first-child::after {
-      background-image: url("../../images/popular-first-icon.svg");
+      background-image: url("../../../images/popular-first-icon.svg");
       top: 36px;
       left: 36px;
       width: 32px;
       height: 32px;
     }
     &:nth-child(2)::after {
-      background-image: url("../../images/popular-second-icon.svg");
+      background-image: url("../../../images/popular-second-icon.svg");
       top: 38px;
       left: 34px;
       width: 34px;
@@ -185,56 +185,56 @@
     }
     &:nth-child(6)::after {
       background-color: #fff;
-      mask-image: url("../../images/popular-third-icon.svg");
+      mask-image: url("../../../images/popular-third-icon.svg");
       top: 37px;
       left: 38px;
       width: 26px;
       height: 32.48px;
     }
     &:nth-child(4)::after {
-      background-image: url("../../images/popular-fourth-icon.svg");
+      background-image: url("../../../images/popular-fourth-icon.svg");
       top: 36px;
       left: 35px;
       width: 34px;
       height: 32px;
     }
     &:nth-child(5)::after {
-      background-image: url("../../images/popular-fifth-icon.svg");
+      background-image: url("../../../images/popular-fifth-icon.svg");
       top: 35px;
       left: 38.2px;
       width: 25.98px;
       height: 32px;
     }
     &:nth-child(7)::after {
-      background-image: url("../../images/popular-sixth-icon.svg");
+      background-image: url("../../../images/popular-sixth-icon.svg");
       top: 42px;
       left: 37px;
       width: 32px;
       height: 22.3px;
     }
     &:nth-child(8)::after {
-      background-image: url("../../images/popular-seventh-icon.svg");
+      background-image: url("../../../images/popular-seventh-icon.svg");
       top: 35px;
       left: 37px;
       width: 30.69px;
       height: 34px;
     }
     &:nth-child(10)::after {
-      background-image: url("../../images/popular-nine-icon.svg");
+      background-image: url("../../../images/popular-nine-icon.svg");
       top: 36px;
       left: 40.2px;
       width: 22.36px;
       height: 32px;
     }
     &:nth-child(11)::after {
-      background-image: url("../../images/popular-ten-icon.svg");
+      background-image: url("../../../images/popular-ten-icon.svg");
       top: 38px;
       left: 35px;
       width: 31.97px;
       height: 32px;
     }
     &:last-child::after {
-      background-image: url("../../images/popular-eight-icon.svg");
+      background-image: url("../../../images/popular-eight-icon.svg");
       top: 35px;
       left: 38px;
       width: 25.45px;

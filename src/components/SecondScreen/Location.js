@@ -1,4 +1,4 @@
-import "../../assets/scss/secondScreen/locations.scss";
+import "../../assets/scss/Home/secondScreen/locations.scss";
 import "simplebar/dist/simplebar.min.css";
 import SimpleBar from "simplebar-react";
 import React from "react";

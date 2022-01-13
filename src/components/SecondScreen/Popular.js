@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../../assets/scss/secondScreen/popular.scss";
+import "../../assets/scss/Home/secondScreen/popular.scss";
 import PopularMobile from "./Popular-mobile";
 
 const amount = 12;

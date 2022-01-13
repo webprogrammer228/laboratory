@@ -1,5 +1,5 @@
-@import "../mixins/media_queries";
-@import "../variables";
+@import "../../mixins/media_queries";
+@import "../../variables";
 // !!!!!! НИЖНИЙ БЛОК !!!!!!
 .bottom_info {
   height: 80px;
@@ -214,7 +214,7 @@
       .navlist-item:nth-child(4)::after {
         content: "";
         display: block;
-        background-image: url("../../images/list-arrow.svg");
+        background-image: url("../../../images/list-arrow.svg");
         width: 12px;
         height: 12px;
         background-size: 12px 12px;

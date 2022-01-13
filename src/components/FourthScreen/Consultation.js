@@ -1,4 +1,4 @@
-import "../../assets/scss/fourthScreen/consultation.scss";
+import "../../assets/scss/Home/fourthScreen/consultation.scss";
 import Rounds from "../../assets/images/rounds.svg";
 
 const Consultation = () => {

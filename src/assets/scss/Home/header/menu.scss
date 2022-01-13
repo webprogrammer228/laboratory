@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../fonts.scss";
-@import "../mixins/media_queries";
+@import "../../variables";
+@import "../../fonts.scss";
+@import "../../mixins/media_queries";
 
 .menu {
   position: fixed;
@@ -95,7 +95,7 @@
           right: 26px;
           width: 16px;
           height: 18px;
-          background-image: url("../../images/cabinet_mobile.svg");
+          background-image: url("../../../images/cabinet_mobile.svg");
           background-repeat: no-repeat;
         }
       }
@@ -125,7 +125,7 @@
         right: 16px;
         width: 16px;
         height: 18px;
-        background-image: url("../../images/right-arrow.svg");
+        background-image: url("../../../images/right-arrow.svg");
         background-repeat: no-repeat;
         transition: 0.4s;
       }
@@ -144,7 +144,7 @@
         content: "";
         width: 18.33px;
         height: 14.67px;
-        background-image: url("../../images/back-arrow.svg");
+        background-image: url("../../../images/back-arrow.svg");
         top: 0;
         left: 0;
         position: absolute;

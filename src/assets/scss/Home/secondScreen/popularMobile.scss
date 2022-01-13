@@ -1,5 +1,5 @@
-@import "../mixins/media_queries";
-@import "../variables";
+@import "../../mixins/media_queries";
+@import "../../variables";
 
 .popular-services-mobile {
   display: none;
@@ -49,14 +49,14 @@
     }
 
     &:first-child::after {
-      background-image: url("../../images/popular-first-icon.svg");
+      background-image: url("../../../images/popular-first-icon.svg");
       top: 14px;
       left: 14px;
       width: 32px;
       height: 32px;
     }
     &:nth-child(2)::after {
-      background-image: url("../../images/popular-second-icon.svg");
+      background-image: url("../../../images/popular-second-icon.svg");
       left: 12px;
       top: 15px;
       width: 34px;
@@ -64,56 +64,56 @@
     }
     &:nth-child(3)::after {
       background-color: #fff;
-      mask-image: url("../../images/popular-third-icon.svg");
+      mask-image: url("../../../images/popular-third-icon.svg");
       left: 16px;
       top: 15px;
       width: 26px;
       height: 32.28px;
     }
     &:nth-child(4)::after {
-      background-image: url("../../images/popular-fourth-icon.svg");
+      background-image: url("../../../images/popular-fourth-icon.svg");
       left: 12px;
       top: 15px;
       width: 34px;
       height: 34px;
     }
     &:nth-child(5)::after {
-      background-image: url("../../images/popular-fifth-icon.svg");
+      background-image: url("../../../images/popular-fifth-icon.svg");
       left: 16px;
       top: 14px;
       width: 25.98px;
       height: 32px;
     }
     &:nth-child(6)::after {
-      background-image: url("../../images/popular-sixth-icon.svg");
+      background-image: url("../../../images/popular-sixth-icon.svg");
       left: 14px;
       top: 20px;
       width: 32px;
       height: 22.3px;
     }
     &:nth-child(7)::after {
-      background-image: url("../../images/popular-seventh-icon.svg");
+      background-image: url("../../../images/popular-seventh-icon.svg");
       left: 16px;
       top: 12px;
       width: 32px;
       height: 36px;
     }
     &:nth-child(8)::after {
-      background-image: url("../../images/popular-eight-icon.svg");
+      background-image: url("../../../images/popular-eight-icon.svg");
       left: 16px;
       top: 12px;
       width: 28px;
       height: 34px;
     }
     &:nth-child(9)::after {
-      background-image: url("../../images/popular-nine-icon.svg");
+      background-image: url("../../../images/popular-nine-icon.svg");
       left: 18px;
       top: 12px;
       width: 23px;
       height: 34px;
     }
     &:last-child::after {
-      background-image: url("../../images/popular-ten-icon.svg");
+      background-image: url("../../../images/popular-ten-icon.svg");
       left: 13.5px;
       top: 15px;
       width: 32.8px;

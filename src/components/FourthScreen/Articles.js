@@ -1,4 +1,4 @@
-import "../../assets/scss/fourthScreen/articles.scss";
+import "../../assets/scss/Home/fourthScreen/articles.scss";
 import ArticleCarouselElem from "./Carousel";
 
 const Articles = () => {

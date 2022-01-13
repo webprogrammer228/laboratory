@@ -1,4 +1,4 @@
-import "../../assets/scss/header/middle.scss";
+import "../../assets/scss/Home/header/middle.scss";
 import lg_logo from "../../assets/images/logo.svg";
 import sm_logo from "../../assets/images/sm_logo.svg";
 import Menu from "./Menu";
