@@ -79,13 +79,13 @@
   height: auto;
   background: $white;
   max-width: 852px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   padding: 24px;
 
   &__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    height: 40px;
 
     &_left-block {
       display: flex;
@@ -95,17 +95,26 @@
         display: flex;
         margin-right: 20px;
         cursor: pointer;
+        height: 100%;
+
+        &.active {
+          border-bottom: 2px solid $orange;
+
+          .title {
+            font-family: "Gotham Pro bold", sans-serif;
+            color: $dark;
+          }
+        }
       }
       .title {
-        font-family: "Gotham Pro bold", sans-serif;
+        font-family: "Gotham Pro ", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
         line-height: 28px;
 
         margin-right: 8px;
-
-        color: $dark;
+        color: $secondary;
       }
       .doctors-counter {
         font-family: "Gotham Pro", sans-serif;
@@ -136,6 +145,12 @@
     }
   }
 
+  .search-services__separator {
+    margin-bottom: 16px;
+    background: $primary-bold;
+    opacity: 0.08;
+  }
+
   .doctor-card {
     height: 168px;
     width: 100%;
@@ -143,17 +158,87 @@
     margin-bottom: 8px;
     display: flex;
 
+    position: relative;
+
+    &:hover {
+      background: #cbe7eb;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
 
-    img {
+    .doctor-image {
       margin: 17.87px 17.6px 9.33px 9.33px;
+    }
+
+    .doctor-regard {
+      width: 40px;
+      height: 46px;
+      position: absolute;
+
+      top: 0;
+      right: 0;
+      margin-right: 24px;
+      z-index: 1;
+    }
+
+    .doctor-regard:hover ~ div {
+      display: block;
+    }
+
+    .hover-info {
+      display: none;
+
+      width: 220px;
+      height: 64px;
+      position: absolute;
+      top: 47px;
+      right: -62px;
+      box-shadow: 0px 4px 16px rgba(83, 97, 106, 0.08);
+
+      background: $itemlist;
+      padding: 12px;
+
+      span {
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: $submenutext;
+      }
+
+      .triangle {
+        position: absolute;
+        top: -8px;
+        right: 98px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 7.5px 7.5px 7.5px;
+        border-color: transparent transparent #fff transparent;
+
+        z-index: 2;
+      }
+    }
+
+    .more {
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+      top: 125px;
+      margin-right: 24px;
+
+      text-decoration: none;
     }
 
     .doctor-text {
       display: flex;
       flex-direction: column;
+      max-width: 497px;
 
       &__doctor-name {
         font-family: "Gotham Pro bold", sans-serif;
@@ -191,6 +276,130 @@
         color: $searchqualification;
         opacity: 0.7;
       }
+    }
+  }
+
+  .service-card {
+    background: $hoveritemlist;
+    margin-bottom: 8px;
+    height: 146px;
+
+    &:hover {
+      background: #cbe7eb;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .service-top {
+    display: flex;
+
+    margin-bottom: 12px;
+
+    .wrapper {
+      background: rgba(254, 254, 254, 0.64);
+      margin-top: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 8px 20px 10px 20px;
+    }
+
+    &__service-title {
+      font-family: "Gotham Pro bold", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      color: $dark;
+    }
+
+    &__service-price {
+      font-family: "Gotham Pro bold", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: $searchqualification;
+    }
+  }
+
+  .service-bottom {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .service-location {
+      display: flex;
+    }
+
+    img {
+      margin-right: 25.25px;
+      align-self: flex-start;
+    }
+
+    .clinics {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-family: "Myriad Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .more {
+    align-self: self-end;
+    font-family: "Myriad Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary;
+
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 104px;
+  max-width: 852px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+  .pagination-container {
+    button,
+    span {
+      padding: 8px 15.5px;
+      border: 0;
+      background: $hoveritemlist;
+
+      font-family: "Myriad Pro", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: $paginationlist;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: $searchhover;
+    }
+
+    button.current-page {
+      background: $searchhover;
     }
   }
 }

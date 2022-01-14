@@ -6,8 +6,11 @@ import { useSearchParams } from "react-router-dom";
 import Select from "react-select";
 import SearchServices from "../../components/Search/Services";
 
+import left from "../../assets/images/PaginationArrowLeft.svg";
+import right from "../../assets/images/PaginationArrowRight.svg";
+
 const Search = () => {
-  // мой велосипед со сменой стилей при переходе на страницу с поиском =))
+  // мой велосипед со сменой стилей при переходе на страницу с поиском без содержимого =))
   // useEffect(() => {
   //   document.body.style.height = "90%";
   //   document.querySelector(".center_info").style.display = "none";
@@ -20,12 +23,8 @@ const Search = () => {
 
   // данные для фильтров
   const options = [
-    { value: "contacts", label: "Контакты" },
-    { value: "analyzies", label: "Анализы на дому" },
-    { value: "after-covid-19", label: "После COVID-19" },
-    { value: "before-born-plastic", label: "Послеродовая пластика" },
-    { value: "adresses", label: "Адреса лабораторий" },
-    { value: "after-covid-19", label: "После COVID-19" },
+    { value: "older", label: "Взрослое" },
+    { value: "child", label: "Детское" },
   ];
 
   const options1 = [
@@ -39,17 +38,17 @@ const Search = () => {
   //
 
   // Кастомизация фильтров
-  const customStyles = {
-    singleValue: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.isSelected ? "white" : "#00a7b5",
-    }),
-  };
+  //const customStyles = {
+  //  singleValue: (provided, state) => ({
+  //    ...provided,
+  //    backgroundColor: state.isSelected ? "white" : "#00a7b5",
+  //  }),
+  //};
 
   //  Компоненты фильтров
   const DepartmentFilter = () => (
     <Select
-      styles={customStyles}
+      //styles={customStyles}
       options={options}
       isClearable={true}
       isSearchable={true}
@@ -68,8 +67,7 @@ const Search = () => {
     />
   );
 
-
-    // состояние для подтягивания инфы с get запросов
+  // состояние для подтягивания инфы с get запросов
   const [searchParams, setSearchParams] = useSearchParams();
   return (
     <>
@@ -89,13 +87,33 @@ const Search = () => {
           <BuildingFilter />
         </div>
 
-        <hr className="filter-separator"/>
+        <hr className="filter-separator" />
 
         <SearchServices />
+
+        <div className="pagination">
+          <div className="pagination-container">
+            <button>
+              <img src={left} alt="pagination-left-arrow" />
+            </button>
+            <span>Ctrl, Предыдущая</span>
+            <button>1</button>
+            <button>...</button>
+            <button>6</button>
+            <button className="current-page">7</button>
+            <button>8</button>
+            <button>...</button>
+            <button>13</button>
+            <span>Следующая, Ctrl</span>
+            <button>
+              <img src={right} alt="pagination-right-arrow" />
+            </button>
+          </div>
+        </div>
       </main>
 
       {/* <div style={{ position: "fixed", bottom: "0", width: "100%" }}> */}
-        <Footer />
+      <Footer />
       {/* </div> */}
     </>
   );
