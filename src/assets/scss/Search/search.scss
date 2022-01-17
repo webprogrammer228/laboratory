@@ -1,4 +1,22 @@
 @import "../variables";
+@import "../mixins/media_queries";
+
+body {
+  @include breakpoint(tablet) {
+    background: $white;
+  }
+}
+
+.container {
+  @include breakpoint(tablet) {
+    margin: 34px 40px 34px 41px;
+  }
+
+  @include breakpoint(beforemobile) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 .search-result__title {
   font-family: "Gotham Pro", sans-serif;
@@ -8,6 +26,16 @@
   line-height: 44px;
   color: $dark;
   margin-bottom: 32px;
+
+  @include breakpoint(tablet) {
+    font-size: 24px;
+    line-height: 34px;
+    margin-left: 28px;
+  }
+
+  @include breakpoint(beforemobile) {
+    margin-left: 0;
+  }
 }
 
 .filter-block {
@@ -20,6 +48,10 @@
   line-height: 24px;
   color: $submenutext;
   margin-bottom: 16px;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 
   .css-319lph-ValueContainer {
     min-width: 183px;
@@ -73,6 +105,10 @@
   background: $primary-bold;
   opacity: 0.08;
   margin-bottom: 24px;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .search-services {
@@ -115,6 +151,11 @@
 
         margin-right: 8px;
         color: $secondary;
+
+        @include breakpoint(tablet) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
       .doctors-counter {
         font-family: "Gotham Pro", sans-serif;
@@ -124,6 +165,11 @@
         line-height: 28px;
 
         color: $secondary;
+
+        @include breakpoint(tablet) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
 
@@ -152,11 +198,12 @@
   }
 
   .doctor-card {
-    height: 168px;
     width: 100%;
     background: $hoveritemlist;
     margin-bottom: 8px;
     display: flex;
+
+    justify-content: space-between;
 
     position: relative;
 
@@ -169,22 +216,50 @@
     }
 
     .doctor-image {
-      margin: 17.87px 17.6px 9.33px 9.33px;
+      margin: 17.87px 0 9.33px 9.33px;
+      object-fit: contain;
+
+      @include breakpoint(tablet) {
+        margin-right: 17.87px;
+      }
+
+      @include breakpoint(beforemobile) {
+        width: 126.93px;
+        height: 123.2px;
+        margin-left: 28px;
+      }
     }
 
     .doctor-regard {
       width: 40px;
       height: 46px;
-      position: absolute;
-
-      top: 0;
-      right: 0;
       margin-right: 24px;
       z-index: 1;
+
+      @include breakpoint(beforemobile) {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
     }
 
     .doctor-regard:hover ~ div {
       display: block;
+    }
+
+    .right-block {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+
+      @include breakpoint(beforemobile) {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+      }
     }
 
     .hover-info {
@@ -212,7 +287,7 @@
 
       .triangle {
         position: absolute;
-        top: -8px;
+        top: -7px;
         right: 98px;
         display: inline-block;
         width: 0;
@@ -226,13 +301,15 @@
     }
 
     .more {
-      position: absolute;
-      bottom: 0;
-      right: 0px;
-      top: 125px;
       margin-right: 24px;
+      margin-bottom: 20px;
 
       text-decoration: none;
+
+      @include breakpoint(beforemobile) {
+        align-self: baseline;
+        margin-left: 28px;
+      }
     }
 
     .doctor-text {
@@ -253,6 +330,11 @@
         background: rgba(254, 254, 254, 0.64);
         margin-top: 20px;
         margin-bottom: 12px;
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          line-height: 22px;
+        }
       }
 
       &__qualification {
@@ -264,6 +346,11 @@
 
         color: $searchqualification;
         margin-bottom: 10px;
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          line-height: 22px;
+        }
       }
 
       &__appointment {
@@ -275,14 +362,29 @@
 
         color: $searchqualification;
         opacity: 0.7;
+        margin-bottom: 24px;
+        margin-right: 20px;
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          line-height: 22px;
+        }
       }
+
+      @include breakpoint(beforemobile) {
+        margin-left: 28px;
+      }
+    }
+
+    @include breakpoint(beforemobile) {
+      flex-direction: column;
     }
   }
 
   .service-card {
     background: $hoveritemlist;
     margin-bottom: 8px;
-    height: 146px;
+    min-height: 146px;
 
     &:hover {
       background: #cbe7eb;
@@ -305,6 +407,10 @@
       width: 100%;
       justify-content: space-between;
       padding: 8px 20px 10px 20px;
+
+      @include breakpoint(mobile) {
+        flex-direction: column;
+      }
     }
 
     &__service-title {
@@ -314,6 +420,17 @@
       font-size: 18px;
       line-height: 26px;
       color: $dark;
+
+      margin-right: 20px;
+
+      @include breakpoint(tablet) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @include breakpoint(mobile) {
+        margin-bottom: 12px;
+      }
     }
 
     &__service-price {
@@ -323,6 +440,12 @@
       font-size: 20px;
       line-height: 28px;
       color: $searchqualification;
+      min-width: 73px;
+
+      @include breakpoint(tablet) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 
@@ -330,6 +453,7 @@
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 
     .service-location {
       display: flex;
@@ -338,6 +462,10 @@
     img {
       margin-right: 25.25px;
       align-self: flex-start;
+
+      @include breakpoint(mobile) {
+        margin-right: 12px;
+      }
     }
 
     .clinics {
@@ -350,7 +478,22 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
+
+        color: $submenutext;
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
+
+      @include breakpoint(mobile) {
+        margin-bottom: 12px;
+      }
+    }
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
     }
   }
   .more {
@@ -367,6 +510,23 @@
     &:hover {
       opacity: 0.75;
     }
+
+    @include breakpoint(tablet) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include breakpoint(mobile) {
+      align-self: baseline;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    max-width: 100%;
+  }
+
+  @include breakpoint(beforemobile) {
+    padding: 0;
   }
 }
 
@@ -376,6 +536,10 @@
   height: 40px;
   display: flex;
   justify-content: center;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
 
   .pagination-container {
     button,

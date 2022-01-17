@@ -83,14 +83,16 @@ const DoctorCard = ({ id, img, name, qualification, appointment, shield }) => {
         <span className="doctor-text__qualification">{qualification}</span>
         <span className="doctor-text__appointment">{appointment}</span>
       </div>
-      <img className="doctor-regard" src={shield} alt="doctor-regard" />
-      <div className="hover-info">
-        <div className="triangle"></div>
-        <span>Врач месяца по признанию пациентов</span>
+      <div className="right-block">
+        <img className="doctor-regard" src={shield} alt="doctor-regard" />
+        <div className="hover-info">
+          <div className="triangle"></div>
+          <span>Врач месяца по признанию пациентов</span>
+        </div>
+        <a href="#" className="more">
+          Подробнее
+        </a>
       </div>
-      <a href="#" className="more">
-        Подробнее
-      </a>
     </div>
   );
 };

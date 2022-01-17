@@ -9,6 +9,8 @@ import SearchServices from "../../components/Search/Services";
 import left from "../../assets/images/PaginationArrowLeft.svg";
 import right from "../../assets/images/PaginationArrowRight.svg";
 
+
+
 const Search = () => {
   // мой велосипед со сменой стилей при переходе на страницу с поиском без содержимого =))
   // useEffect(() => {
@@ -109,6 +111,10 @@ const Search = () => {
               <img src={right} alt="pagination-right-arrow" />
             </button>
           </div>
+        </div>
+        {/* <SearchBar placeholder={"Enter a book name..."} data={data} /> */}
+        <div>
+
         </div>
       </main>
 
