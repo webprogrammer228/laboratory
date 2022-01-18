@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 const token =
-  "89d274837577f4c689c04191ef58b66059a0b0d167c61e24a876320b753c27897958838d66a2550d";
+  "0fdc076374caff1ada37a44bad28c78e83278d8461826562ffe380624b60967fff3d0de32bb230dc";
 const url = "https://ris.euromed-omsk.ru/api/v1.0";
 
 const authAxios = axios.create({
