@@ -15,4 +15,8 @@ export function useDebounce(value, timeout, callback) {
         setTimer(newTimer);
     }
   }, [value]);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 859264e2 (все добавлено)
