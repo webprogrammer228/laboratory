@@ -4,7 +4,7 @@ import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Search from "./pages/Search/Search";
 import NotFound from "./pages/404";
-import SearchSome from "./api/searchapi";
+import SearchSome from "./api/SearchSome";
 
 ReactDOM.render(
   <React.StrictMode>
